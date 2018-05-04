@@ -1,0 +1,13 @@
+.ui.blueColor.button {
+    background-color: #0076C6;
+    color: white;
+}
+
+#changeBar {
+    background-color:red;
+}
+
+.own-class {
+    width: 400 px;
+    height: 400px;
+}
