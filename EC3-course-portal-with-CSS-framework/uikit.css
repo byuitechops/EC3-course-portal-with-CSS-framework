@@ -1,0 +1,17 @@
+.uk-button {
+    background-color:#0076C6;
+    color: white;
+    border-radius: 5px;
+}
+
+.uk-container {
+    border: dotted;
+}
+
+.uk-checkbox:checked {
+    background-color: red;
+}
+
+.uk-radio:checked {
+    background-color: purple;
+}

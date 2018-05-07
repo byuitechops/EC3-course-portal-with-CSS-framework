@@ -1,13 +1,14 @@
-.ui.blueColor.button {
+.ui.button {
     background-color: #0076C6;
     color: white;
 }
 
-#changeBar {
-    background-color:red;
+
+
+.ui.indicating.progress {
+    background-color:teal;
 }
 
-.own-class {
-    width: 400 px;
-    height: 400px;
+#myBar {
+    background-color:black;
 }
