@@ -1,17 +1,31 @@
 .uk-button {
-    background-color:#0076C6;
+    background-color: #0076C6;
     color: white;
     border-radius: 5px;
+    height: 20px;
 }
 
-.uk-container {
-    border: dotted;
+.uk-subnav-pill>.uk-active>a {
+    background-color: #006666;
 }
 
-.uk-checkbox:checked {
-    background-color: red;
+ul.uk-subnav.uk-subnav-pill {
+    background-color: #00b3b3;
 }
 
-.uk-radio:checked {
-    background-color: purple;
+.uk-subnav-pill>*>:first-child {
+    color: white;
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+#vocabIcon,
+#grammarIcon {
+    background-color: #00b3b3;
+    color: white;
+    filter: brightness(110%);
+    border-radius: 50%;
 }
