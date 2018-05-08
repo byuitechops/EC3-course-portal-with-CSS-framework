@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>EC-3 Home</title>
     <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
     <link rel="stylesheet" href="uikit.css" type="text/css">
 </head>
@@ -12,47 +13,78 @@
 <body>
     <nav class="uk-navbar-container uk-margin" uk-navbar>
         <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="#">EnglishConnect3</a>
-            <a class="uk-navbar-item uk-logo" href="#">HOME</a>
+            <a class="uk-navbar-item uk-logo" href="#">English
+                <i>Connect3</i>
+            </a>
         </div>
     </nav>
 
-    <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+    <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" uk-switcher>
         <li>
-            <a href="#">Item</a>
+            <a href="#">MY PROGRESS</a>
         </li>
         <li>
-            <a href="#">Item</a>
+            <a href="#">TODAY'S GOALS</a>
         </li>
     </ul>
 
     <ul class="uk-switcher uk-margin">
         <div class="uk-container" id="my-progress">
-            <div class=" uk-button-group ">
-                <p>Vocabulary</p>
-                <button class="uk-button uk-button-default " id="vocabIcon " disabled>V</button>
-                <button class="uk-button uk-button-default ">1</button>
-                <button class="uk-button uk-button-default ">2</button>
-                <button class="uk-button uk-button-default ">3</button>
-                <button class="uk-button uk-button-default ">4</button>
+            <p class="circle"></p>
+            <div class="uk-button-group uk-width-expand" id="square-edges">
+                <button class="uk-button-small" id="vocabIcon" disabled>V</button>
+                <button class="uk-button">1</button>
+                <button class="uk-button">2</button>
+                <button class="uk-button">3</button>
+                <button class="uk-button">4</button>
             </div>
-            <div class="uk-button-group ">
-                <p>Grammar</p>
-                <button class="uk-button uk-button-default " id="grammarIcon " disabled>G</button>
-                <button class="uk-button uk-button-default ">1</button>
-                <button class="uk-button uk-button-default ">2</button>
-                <button class="uk-button uk-button-default ">3</button>
-                <button class="uk-button uk-button-default ">4</button>
+            <br>
+            <br>
+            <div class="uk-button-group id=" square-edges "">
+                <button class="uk-button-small" id="grammarIcon" disabled>G</button>
+                <button class="uk-button">1</button>
+                <button class="uk-button">2</button>
+                <button class="uk-button">3</button>
+                <button class="uk-button">4</button>
             </div>
         </div>
 
-        <div class='uk-container' id="todays-goals">
+        <div class='uk-container' id="todays-goals ">
             <ol>
-                <li>goal1</li>
+                <li>_____________________________________</li>
+                <li>_____________________________________</li>
+                <li>_____________________________________</li>
+                <li>_____________________________________</li>
+                <li>_____________________________________</li>
             </ol>
         </div>
-
     </ul>
+
+    <nav class="uk-navbar-container" id="bottom-nav">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#" uk-icon="home"></a>
+                <p>Home</p>
+            </li>
+            <li>
+                <a href="#" uk-icon="star"></a>
+                <p>Goals</p>
+            </li>
+            <li>
+                <a href="#" uk-icon="users"></a>
+                <p>Gathering</p>
+            </li>
+            <li>
+                <a href="#" uk-icon="comments"></a>
+                <p>Feedback</p>
+            </li>
+            <li>
+                <a href="#" uk-icon="info"></a>
+                <p>Learning to Learn</p>
+            </li>
+        </ul>
+    </nav>
+
 </body>
 
 </html>

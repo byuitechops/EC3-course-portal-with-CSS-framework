@@ -1,8 +1,11 @@
 .uk-button {
-    background-color: #0076C6;
+    background-color: gray;
     color: white;
-    border-radius: 5px;
-    height: 20px;
+}
+
+.uk-button-group>.uk-button:nth-child(n+2) {
+    margin-left: 2px;
+    margin-top: 0px;
 }
 
 .uk-subnav-pill>.uk-active>a {
@@ -11,11 +14,16 @@
 
 ul.uk-subnav.uk-subnav-pill {
     background-color: #00b3b3;
+    width: 302px;
+}
+
+ul.uk-subnav.uk-subnav-pill>li {
+    background-color: #00b3b3;
+    padding: 0px;
 }
 
 .uk-subnav-pill>*>:first-child {
     color: white;
-    margin: auto;
     font-size: 1.2em;
     text-align: center;
     vertical-align: middle;
@@ -24,8 +32,50 @@ ul.uk-subnav.uk-subnav-pill {
 
 #vocabIcon,
 #grammarIcon {
-    background-color: #00b3b3;
+    background-color: #299999;
     color: white;
     filter: brightness(110%);
     border-radius: 50%;
+    height: 50px;
+    font-family: serif;
+    font-size: 2em;
+}
+
+#grammarIcon {
+    background-color: rgb(255, 166, 0);
+}
+
+.circle {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: solid;
+}
+
+#square-edges {
+    border-radius: 0px;
+}
+
+.uk-container {
+    float: left;
+}
+
+#bottom-nav {
+    bottom: 0;
+    position: absolute;
+}
+
+.uk-navbar-nav>li>a {
+    color: gray;
+    height: 5px;
+}
+
+.uk-navbar-nav>li {
+    width: 100px;
+    text-align: center;
+}
+
+.uk-navbar-nav>li>p {
+    padding: 0px;
+    margin: 8px;
 }
