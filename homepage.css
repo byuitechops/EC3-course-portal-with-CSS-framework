@@ -1,17 +1,17 @@
 /*--------------- Switcher ---------------*/
 
+/*Entire switcher bar*/
+
 ul.uk-subnav.uk-subnav-pill {
     background-color: #00b3b3;
     width: 302px;
     margin-left: 80px;
 }
 
+/*Switcher tab*/
+
 ul.uk-subnav.uk-subnav-pill>li {
     padding: 0px;
-}
-
-.uk-subnav-pill>.uk-active>a {
-    background-color: #006666;
 }
 
 .uk-subnav-pill>*>:first-child {
@@ -22,17 +22,20 @@ ul.uk-subnav.uk-subnav-pill>li {
     padding-top: 5px;
 }
 
-/*--------------- Buttons ---------------*/
+/*Active switcher tab*/
 
-.uk-button {
-    background-color: gray;
-    color: white;
+.uk-subnav-pill>.uk-active>a {
+    background-color: #006666;
 }
+
+/*--------------- Buttons ---------------*/
 
 .uk-button-group>.uk-button:nth-child(n+2) {
     margin-left: 2px;
     max-height: 25px;
     line-height: 0px;
+    background-color: gray;
+    color: white;
 }
 
 #vocabIcon,
@@ -89,7 +92,7 @@ ul.uk-subnav.uk-subnav-pill>li {
     font-size: 10px;
 }
 
-/* Card */
+/*--------------- Card ---------------*/
 
 .uk-card-body {
     background-color: rgb(21, 88, 85);
@@ -115,7 +118,7 @@ div.uk-card {
     margin-right: 0px;
 }
 
-/* Media Query */
+/*--------------- Media Query ---------------*/
 
 @media screen and (max-width: 1200px) {
     .uk-subnav {
