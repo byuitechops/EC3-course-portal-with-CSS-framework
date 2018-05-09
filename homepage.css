@@ -3,7 +3,7 @@
 ul.uk-subnav.uk-subnav-pill {
     background-color: #00b3b3;
     width: 302px;
-    margin-left: 20px;
+    margin-left: 80px;
 }
 
 ul.uk-subnav.uk-subnav-pill>li {
@@ -55,7 +55,7 @@ ul.uk-subnav.uk-subnav-pill>li {
 /*--------------- Container ---------------*/
 
 .uk-container {
-    float: left;
+    margin-left: 30px;
 }
 
 .circle {
@@ -63,6 +63,7 @@ ul.uk-subnav.uk-subnav-pill>li {
     width: 250px;
     border-radius: 50%;
     border: solid;
+    margin-left: 30px;
 }
 
 /*--------------- Bottom Navbar ---------------*/
@@ -78,11 +79,46 @@ ul.uk-subnav.uk-subnav-pill>li {
 }
 
 .uk-navbar-nav>li {
-    width: 100px;
+    width: 70px;
     text-align: center;
 }
 
 .uk-navbar-nav>li>p {
     padding: 0px;
-    margin: 8px;
+    margin: 15px;
+    font-size: 10px;
+}
+
+/* Card */
+
+.uk-card-body {
+    background-color: rgb(21, 88, 85);
+    color: rgb(194, 147, 47);
+    font-style: italic;
+    height: 100px;
+    width: 240px;
+    padding: 15px;
+}
+
+img.uk-cover {
+    background-color: rgb(21, 88, 85);
+    padding: 25px 15px;
+}
+
+.uk-cover-container {
+    width: 110px;
+    height: 130px;
+}
+
+div.uk-card {
+    width: 380px;
+    margin-right: 0px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1200px) {
+    .uk-subnav {
+        display: none;
+    }
 }

@@ -7,10 +7,11 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
-    <link rel="stylesheet" href="uikit.css" type="text/css">
+    <link rel="stylesheet" href="homepage.css" type="text/css">
 </head>
 
 <body>
+    <!--Top Navbar-->
     <nav class="uk-navbar-container uk-margin" uk-navbar>
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="#">English
@@ -19,6 +20,7 @@
         </div>
     </nav>
 
+    <!--Switcher tabs-->
     <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" uk-switcher>
         <li>
             <a href="#">MY PROGRESS</a>
@@ -28,9 +30,12 @@
         </li>
     </ul>
 
+    <!--Switcher Content-->
     <ul class="uk-switcher uk-margin">
+        <!--Container holding level circle, vocab and grammar parts-->
         <div class="uk-container" id="my-progress">
             <p class="circle"></p>
+            <!--Vocabulary buttons-->
             <div class="uk-button-group uk-width-expand" id="square-edges">
                 <button class="uk-button-small" id="vocabIcon" disabled>V</button>
                 <button class="uk-button">1</button>
@@ -40,7 +45,8 @@
             </div>
             <br>
             <br>
-            <div class="uk-button-group id=" square-edges "">
+            <!--Grammar Buttons-->
+            <div class="uk-button-group id=">
                 <button class="uk-button-small" id="grammarIcon" disabled>G</button>
                 <button class="uk-button">1</button>
                 <button class="uk-button">2</button>
@@ -49,37 +55,73 @@
             </div>
         </div>
 
+        <!--Container holding goals and quote-->
         <div class='uk-container' id="todays-goals ">
+            <!--Goals and check marks-->
             <ol>
-                <li>_____________________________________</li>
-                <li>_____________________________________</li>
-                <li>_____________________________________</li>
-                <li>_____________________________________</li>
-                <li>_____________________________________</li>
+                <li>___________________________________________________
+                    <a href="#" uk-icon="check"></a>
+                </li>
+                <br>
+                <li>___________________________________________________
+                    <a href="#" uk-icon="check"></a>
+                </li>
+                <br>
+                <li>___________________________________________________
+                    <a href="#" uk-icon="check"></a>
+                </li>
+                <br>
+                <li>___________________________________________________
+                    <a href="#" uk-icon="check"></a>
+                </li>
+                <br>
+                <li>___________________________________________________
+                    <a href="#" uk-icon="check"></a>
+                </li>
+                <br>
             </ol>
+
+            <!--Quote card with picture-->
+            <div class="uk-card uk-card-default uk-grid-collapse" uk-grid>
+                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                    <img src="presEyring.jfif" alt="" uk-cover>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        "The purpose of the gospel of Jesus Christ is to change you so that you're not trying to resist change."
+                        <br> -Pres. Henry B Eyring
+                    </div>
+                </div>
+            </div>
         </div>
     </ul>
 
+    <!--Bottom Navbar-->
     <nav class="uk-navbar-container" id="bottom-nav">
         <ul class="uk-navbar-nav">
+            <!--Home Button Icon-->
             <li>
-                <a href="#" uk-icon="home"></a>
+                <a href="#" uk-icon="icon: home; ratio:1.5"></a>
                 <p>Home</p>
             </li>
+            <!--Goals Button Icon-->
             <li>
-                <a href="#" uk-icon="star"></a>
+                <a href="#" uk-icon="icon: star; ratio:1.5 "></a>
                 <p>Goals</p>
             </li>
+            <!--Gathering Button Icon-->
             <li>
-                <a href="#" uk-icon="users"></a>
+                <a href="#" uk-icon="icon: users; ratio:1.5"></a>
                 <p>Gathering</p>
             </li>
+            <!--Feedback Button Icon-->
             <li>
-                <a href="#" uk-icon="comments"></a>
+                <a href="#" uk-icon="icon: comments; ratio:1.5"></a>
                 <p>Feedback</p>
             </li>
+            <!--Learning to Learn Button Icon-->
             <li>
-                <a href="#" uk-icon="info"></a>
+                <a href="#" uk-icon="icon: info; ratio:1.5"></a>
                 <p>Learning to Learn</p>
             </li>
         </ul>
