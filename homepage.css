@@ -1,3 +1,13 @@
+/*--------------- Top Navbar ---------------*/
+
+.uk-navbar-left {
+    margin-left: 5px;
+}
+
+.uk-navbar-right {
+    margin-right: 10px;
+}
+
 /*--------------- Switcher ---------------*/
 
 /*Entire switcher bar*/
@@ -118,10 +128,97 @@ div.uk-card {
     margin-right: 0px;
 }
 
+/*--------------- Reading Page ---------------*/
+
+#function-button {
+    margin-top: 15px;
+    background-color: rgb(194, 98, 34);
+    color: white;
+    height: 50px;
+    width: 100px;
+    padding: 0px;
+}
+
+#level-test-button {
+    margin-left: 200px;
+    margin-top: 15px;
+    height: 50px;
+    width: 100px;
+    padding: 0px;
+}
+
+.uk-divider-small::after {
+    width: 300px;
+}
+
+/*--------------- Vocabulary Page ---------------*/
+
+#practice-button,
+#test-button {
+    width: 150px;
+    height: 25px;
+    padding: 0px;
+    line-height: 0px;
+    background-color: rgb(41, 185, 178);
+    color: white;
+}
+
+#test-button {
+    background-color: rgb(72, 136, 43);
+}
+
+/*--------------- Goals Page ---------------*/
+
+#goal-button {
+    background-color: rgb(34, 116, 111);
+    color: white;
+    margin-top: 15px;
+    height: 30px;
+    width: 250px;
+    padding: 0px;
+    line-height: 0px;
+}
+
+/*--------------- Gathering Page ---------------*/
+
+.uk-accordion-title {
+    background-color: rgb(34, 116, 111);
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.uk-accordion-title:hover,
+.uk-accordion-title:focus {
+    color: white;
+}
+
+.uk-accordion {
+    margin-left: 20px;
+}
+
+.uk-accordion-title::after {
+    background-image: none;
+    float: none;
+}
+
 /*--------------- Media Query ---------------*/
 
 @media screen and (max-width: 1200px) {
-    .uk-subnav {
+    #my-progress,
+    #todays-goals {
         display: none;
+    }
+    #bottom-nav {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
     }
 }
