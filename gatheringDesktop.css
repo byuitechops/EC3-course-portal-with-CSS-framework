@@ -1,0 +1,103 @@
+/*--------------- Desktop Gathering Page ---------------*/
+
+.uk-card-body {
+    padding: 0px;
+    margin: 15px 50px;
+    width: 340px;
+    border: solid rgba(128, 128, 128, 0.246);
+    border-width: 2px;
+}
+
+button.uk-button.unit-buttons {
+    border: solid gray;
+    border-radius: 5px;
+    width: 80px;
+    max-width: 120px;
+    height: 40px;
+    padding: 0px;
+    text-transform: none;
+    margin: 5px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+div.uk-grid-small {
+    margin-left: 150px;
+    margin-top: 0px;
+    width: 1630px;
+    float: right;
+}
+
+button.uk-button.unit-buttons.button-seven {
+    margin-left: 117px;
+    max-width: 102px;
+}
+
+.uk-card-title {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+#unit-one {
+    background-color: rgb(14, 87, 155);
+}
+
+#unit-two {
+    background-color: rgb(30, 170, 170);
+}
+
+#unit-three {
+    background-color: rgb(122, 167, 70);
+}
+
+#unit-four {
+    background-color: rgb(194, 46, 46);
+}
+
+#unit-five {
+    background-color: rgb(224, 129, 39);
+}
+
+#unit-six {
+    background-color: rgb(228, 156, 24);
+}
+
+#unit-seven {
+    background-color: rgb(68, 163, 119);
+}
+
+#sidenav {
+    background-color: rgb(244, 173, 37);
+    /* background-color: rgb(247, 173, 37);*/
+    margin-left: 0px;
+    width: 90px;
+    margin-right: 50px;
+    padding-left: 0px;
+}
+
+#side-nav-button {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    border-bottom: solid white;
+}
+
+#pathway-logo {
+    width: 130px;
+    max-width: 150px;
+    border-bottom: solid white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    background-color: rgb(196, 191, 191);
+    width: 130px;
+    margin-top: 115px;
+}
+
+#breadcrumb {
+    margin: 0px 340px;
+}

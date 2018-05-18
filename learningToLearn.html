@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EC-3 Goals</title>
+    <title>EC-3 Learning to Learn</title>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
@@ -13,34 +13,37 @@
 <body>
     <!--Top Navbar-->
     <nav class="uk-navbar-container uk-margin" uk-navbar>
-        <div class="uk-navbar-left">
-            <a class="uk-navbar-item uk-logo" href="">Goals</a>
-        </div>
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="">English
                 <i>Connect3</i>
             </a>
         </div>
         <div class="uk-navbar-right">
-            <a href="" uk-icon="question">Help</a>
+            <a href="" uk-icon="icon: question; ratio:2">Help</a>
         </div>
     </nav>
 
+    <div class="uk-container" id="second-nav">
+        <hr class="uk-divider-small">
+        <a class="uk-logo" href="">Learning to Learn</a>
+        <hr class="uk-divider-small">
+    </div>
+
     <div class="uk-container">
-        <button class="uk-button" id="goal-button">VISION</button>
+        <button class="uk-button" id="goal-button">COURSE OVERVIEW</button>
         <br>
-        <button class="uk-button" id="goal-button">LONG TERM GOALS</button>
+        <button class="uk-button" id="goal-button">WEEKLY GATHERING</button>
         <br>
-        <button class="uk-button" id="goal-button">SHORT TERM GOALS-WEEKLY</button>
+        <button class="uk-button" id="goal-button">SETTING GOALS</button>
         <br>
-        <button class="uk-button" id="goal-button">SELF-EVALUATE</button>
+        <button class="uk-button" id="goal-button">AGENTIVE LEARNING</button>
         <br>
-        <button class="uk-button" id="goal-button">REFLECTION JOURNAL</button>
+        <button class="uk-button" id="goal-button">LEARNING A LANGUAGE</button>
     </div>
 
 
     <!--Bottom Navbar-->
-    <nav class="uk-navbar-container" id="bottom-nav">
+    <nav class="uk-navbar-container uk-position-bottom" id="bottom-nav">
         <ul class="uk-navbar-nav">
             <!--Home Button Icon-->
             <li>
@@ -48,8 +51,8 @@
                 <p>Home</p>
             </li>
             <!--Goals Button Icon-->
-            <li id="active-button">
-                <a href="#" uk-icon="icon: star; ratio:4" id="active-button"></a>
+            <li>
+                <a href="goals.html" uk-icon="icon: star; ratio:4 "></a>
                 <p>Goals</p>
             </li>
             <!--Gathering Button Icon-->
@@ -63,8 +66,8 @@
                 <p>Feedback</p>
             </li>
             <!--Learning to Learn Button Icon-->
-            <li>
-                <a href="learningToLearn.html" uk-icon="icon: info; ratio:4"></a>
+            <li id="active-button">
+                <a href="#" uk-icon="icon: info; ratio:4" id="active-button"></a>
                 <p>Learning to Learn</p>
             </li>
         </ul>

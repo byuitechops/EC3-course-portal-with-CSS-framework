@@ -1,0 +1,122 @@
+/*--------------- Desktop Home Page ---------------*/
+
+#desktop-my-progress {
+    border: solid rgb(196, 191, 191);
+    margin-left: 10px;
+    margin-right: 100px;
+    height: 700px;
+}
+
+#desktop-my-progress>.uk-card-title {
+    background-color: #086470;
+    color: white;
+}
+
+#desktop-todays-goals {
+    border: solid rgb(196, 191, 191);
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+#desktop-todays-goals>.uk-card-title {
+    background-color: #086470;
+    color: white;
+}
+
+#vocabIcon-desktop,
+#grammarIcon-desktop {
+    background-color: #299999;
+    color: white;
+    filter: brightness(110%);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-family: serif;
+    font-size: 1.5em;
+    padding: 0px 5px;
+}
+
+#grammarIcon-desktop {
+    background-color: rgb(255, 166, 0);
+}
+
+#square-edges {
+    width: 70px;
+    height: 40px;
+}
+
+.circle-desktop {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: solid;
+    margin-left: 180px;
+}
+
+#desktop-divider.uk-divider-small::after {
+    width: 690px;
+}
+
+#vocab-grammar-container {
+    width: 350px;
+    margin-right: 0px;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+#sidenav {
+    background-color: rgb(244, 173, 37);
+    /* background-color: rgb(247, 173, 37);*/
+    margin-left: 0px;
+    width: 90px;
+    margin-right: 50px;
+    padding-left: 0px;
+}
+
+#side-nav-button {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    border-bottom: solid white;
+}
+
+#pathway-logo {
+    width: 130px;
+    max-width: 150px;
+    border-bottom: solid white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    background-color: rgb(196, 191, 191);
+    width: 130px;
+    margin-top: 115px;
+}
+
+#breadcrumb {
+    margin: 0px 340px;
+}
+
+.uk-card-body {
+    padding: 0px;
+    margin: 15px 50px;
+    width: 340px;
+    border: solid rgba(128, 128, 128, 0.246);
+    border-width: 2px;
+}
+
+div.uk-grid-small {
+    margin-left: 150px;
+    margin-top: 0px;
+    width: 1630px;
+    float: right;
+}
+
+.uk-card-title {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}

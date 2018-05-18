@@ -13,40 +13,48 @@
 <body>
     <!--Top Navbar-->
     <nav class="uk-navbar-container uk-margin" uk-navbar>
-        <div class="uk-navbar-left">
-            <a class="uk-navbar-item uk-logo" href="">Gathering</a>
-        </div>
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="">English
                 <i>Connect3</i>
             </a>
         </div>
+        <div class="uk-navbar-right">
+            <a href="" uk-icon="icon: question; ratio: 2">Help</a>
+        </div>
     </nav>
+
+
+    <div class="uk-container" id="second-nav">
+        <hr class="uk-divider-small">
+        <a class="uk-logo" href="">Gathering</a>
+        <hr class="uk-divider-small">
+    </div>
+
 
     <ul uk-accordion>
         <li>
-            <a class="uk-accordion-title" href="#">PREPARATION MATERIALS</a>
+            <a class="uk-accordion-title" href="#">&gt; PREPARATION MATERIALS</a>
             <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.</p>
             </div>
         </li>
         <li>
-            <a class="uk-accordion-title" href="#">LEAD STUDENT INFO</a>
+            <a class="uk-accordion-title" href="#">&gt; LEAD STUDENT INFO</a>
             <div class="uk-accordion-content">
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor reprehenderit.</p>
             </div>
         </li>
         <li>
-            <a class="uk-accordion-title" href="#">CONTACT EC3 MISSIONARIES</a>
+            <a class="uk-accordion-title" href="#">&gt; CONTACT EC3 MISSIONARIES</a>
             <div class="uk-accordion-content">
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
                     sint occaecat cupidatat proident.</p>
             </div>
         </li>
         <li>
-            <a class="uk-accordion-title" href="#">LOCATION</a>
+            <a class="uk-accordion-title" href="#">&gt; LOCATION</a>
             <div class="uk-accordion-content">
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
                     sint occaecat cupidatat proident.</p>
@@ -61,27 +69,27 @@
         <ul class="uk-navbar-nav">
             <!--Home Button Icon-->
             <li>
-                <a href="#" uk-icon="icon: home; ratio:1.5"></a>
+                <a href="homepage.html" uk-icon="icon: home; ratio:4"></a>
                 <p>Home</p>
             </li>
             <!--Goals Button Icon-->
             <li>
-                <a href="#" uk-icon="icon: star; ratio:1.5 "></a>
+                <a href="goals.html" uk-icon="icon: star; ratio:4"></a>
                 <p>Goals</p>
             </li>
             <!--Gathering Button Icon-->
-            <li>
-                <a href="#" uk-icon="icon: users; ratio:1.5"></a>
+            <li id="active-button">
+                <a href="#" uk-icon="icon: users; ratio:4" id="active-button"></a>
                 <p>Gathering</p>
             </li>
             <!--Feedback Button Icon-->
             <li>
-                <a href="#" uk-icon="icon: comments; ratio:1.5"></a>
+                <a href="#" uk-icon="icon: comments; ratio:4"></a>
                 <p>Feedback</p>
             </li>
             <!--Learning to Learn Button Icon-->
             <li>
-                <a href="#" uk-icon="icon: info; ratio:1.5"></a>
+                <a href="learningToLearn.html" uk-icon="icon: info; ratio:4"></a>
                 <p>Learning to Learn</p>
             </li>
         </ul>
