@@ -26,16 +26,14 @@
     margin-bottom: 10px;
 }
 
-/*--------------- Switcher ---------------*/
+/*--------------- Mobile Homepage ---------------*/
 
 /*Entire switcher bar*/
 
 ul.uk-subnav.uk-subnav-pill {
     background-color: #00b3b3;
-    /*width: 302px;*/
     width: 50%;
-    height: 4%;
-    /*margin-left: 80px;*/
+    height: 5%;
     margin-top: 250px;
 }
 
@@ -47,7 +45,6 @@ ul.uk-subnav.uk-subnav-pill>li {
 
 .uk-subnav-pill>*>:first-child {
     color: white;
-    /*font-size: 1.2em;*/
     font-size: 200%;
     text-align: center;
     vertical-align: middle;
@@ -61,23 +58,28 @@ ul.uk-subnav.uk-subnav-pill>li {
 }
 
 .circle {
-    /* height: 250px;
-    width: 250px;*/
+    /*
     width: 600px;
     height: 600px;
     border-radius: 50%;
     border: solid;
-    /*margin-left: 30px;*/
+    */
 }
 
-/*--------------- Buttons ---------------*/
-
-.uk-button-group>.uk-button:nth-child(n+1) {
+*/ .uk-button-group>.uk-button:nth-child(n+1) {
     margin-left: 2px;
-    max-height: 25px;
+    /*max-height: 25px;*/
     line-height: 0px;
     background-color: gray;
     color: white;
+    width: 100%;
+    font-size: 4em;
+}
+
+button.uk-button {
+    padding: 2px 75px;
+    font-size: 2.5em;
+    margin-right: 5px;
 }
 
 #vocabIcon,
@@ -86,21 +88,20 @@ ul.uk-subnav.uk-subnav-pill>li {
     color: white;
     filter: brightness(110%);
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    height: 80px;
+    width: 80px;
     font-family: serif;
-    font-size: 1.5em;
-    padding: 0px 5px;
+    font-size: 4em;
+    padding: 0px 15px;
+    margin-right: 20px;
+}
+
+div#my-progress.uk-container.uk-position-center.uk-active {
+    width: 800px;
 }
 
 #grammarIcon {
     background-color: rgb(255, 166, 0);
-}
-
-/*--------------- Container ---------------*/
-
-.uk-container {
-    /*margin-left: 30px;*/
 }
 
 /*--------------- Bottom Navbar ---------------*/
@@ -141,17 +142,19 @@ ul.uk-subnav.uk-subnav-pill>li {
     margin-top: 15px;
     background-color: rgb(194, 98, 34);
     color: white;
-    height: 50px;
-    width: 100px;
+    width: 25%;
+    height: 5%;
     padding: 0px;
+    font-size: 1.9rem;
+    border-radius: 5px;
 }
 
 #level-test-button {
-    margin-left: 200px;
-    margin-top: 15px;
-    height: 50px;
-    width: 100px;
-    padding: 0px;
+    float: right;
+    width: 25%;
+    height: 5%;
+    font-size: 1.9rem;
+    border-radius: 5px;
 }
 
 .uk-divider-small::after {
@@ -159,20 +162,40 @@ ul.uk-subnav.uk-subnav-pill>li {
     border-top: 3px solid gray;
 }
 
+p {
+    font-size: 30px;
+}
+
 /*--------------- Vocabulary Page ---------------*/
 
 #practice-button,
 #test-button {
-    width: 150px;
-    height: 25px;
-    padding: 0px;
+    width: 45%;
+    height: 4%;
     line-height: 0px;
     background-color: rgb(41, 185, 178);
     color: white;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #test-button {
     background-color: rgb(72, 136, 43);
+}
+
+#vocab-container {
+    margin-top: 60%;
+    margin-left: 5%;
+    width: 800px;
+}
+
+#level-container {
+    border: solid rgb(182, 181, 181);
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 /*--------------- Goals Page ---------------*/

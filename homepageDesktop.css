@@ -36,6 +36,12 @@
     padding: 0px 5px;
 }
 
+button.uk-button {
+    padding: 0px 30px;
+    font-size: .875rem;
+    margin-right: 0px;
+}
+
 #grammarIcon-desktop {
     background-color: rgb(255, 166, 0);
 }
@@ -119,4 +125,32 @@ div.uk-grid-small {
     padding: 20px;
     color: white;
     text-align: center;
+}
+
+/*--------------- Top Navbar ---------------*/
+
+.uk-navbar-left {
+    margin-left: 5px;
+    /*font-size: 200%;*/
+}
+
+.uk-logo {
+    font-size: 200%;
+}
+
+#second-nav {
+    /* margin-left: 31%;*/
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 125%;
+}
+
+.uk-navbar-right {
+    margin-right: 10px;
+    font-size: 150%;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    height: 5%;
+    margin-bottom: 10px;
 }
