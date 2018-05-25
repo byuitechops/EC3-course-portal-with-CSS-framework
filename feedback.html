@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EC-3 Vocabulary</title>
+    <title>EC-3 Feedback</title>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
@@ -14,7 +14,7 @@
     <!--Top Navbar-->
     <nav class="uk-navbar-container uk-margin" uk-navbar>
         <div class="uk-navbar-left">
-            <a class="uk-navbar-item uk-logo" href="">Vocabulary</a>
+            <a class="uk-navbar-item uk-logo" href="">Feedback</a>
         </div>
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="">English
@@ -26,28 +26,6 @@
         </div>
     </nav>
 
-    <div class="uk-container" id="vocab-container">
-        <div class="uk-container" id="level-container">
-            <p>LEVEL 1</p>
-            <button class="uk-button" id="practice-button">PRACTICE</button>
-            <button class="uk-button" id="test-button">TEST</button>
-        </div>
-        <div class="uk-container" id="level-container">
-            <p>LEVEL 2</p>
-            <button class="uk-button" id="practice-button">PRACTICE</button>
-            <button class="uk-button" id="test-button">TEST</button>
-        </div>
-        <div class="uk-container" id="level-container">
-            <p>LEVEL 3</p>
-            <button class="uk-button" id="practice-button">PRACTICE</button>
-            <button class="uk-button" id="test-button">TEST</button>
-        </div>
-        <div class="uk-container" id="level-container">
-            <p>LEVEL 4</p>
-            <button class="uk-button" id="practice-button">PRACTICE</button>
-            <button class="uk-button" id="test-button">TEST</button>
-        </div>
-    </div>
 
 
     <!--Bottom Navbar-->
@@ -59,8 +37,8 @@
                 <p>Home</p>
             </li>
             <!--Goals Button Icon-->
-            <li>
-                <a href="goals.html" uk-icon="icon: star; ratio:4"></a>
+            <li id="active-button">
+                <a href="#" uk-icon="icon: star; ratio:4" id="active-button"></a>
                 <p>Goals</p>
             </li>
             <!--Gathering Button Icon-->
@@ -70,7 +48,7 @@
             </li>
             <!--Feedback Button Icon-->
             <li>
-                <a href="feedback.html" uk-icon="icon: comments; ratio:4"></a>
+                <a href="#" uk-icon="icon: comments; ratio:4"></a>
                 <p>Feedback</p>
             </li>
             <!--Learning to Learn Button Icon-->
