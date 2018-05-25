@@ -1,25 +1,27 @@
 /*--------------- Top Navbar ---------------*/
 
-.uk-navbar-left {
-    margin-left: 5px;
-    /*font-size: 200%;*/
-}
+/* EnglishConnect Text and Subnav under it */
 
 .uk-logo {
     font-size: 200%;
 }
 
+/* Subnav text */
+
 #second-nav {
-    /* margin-left: 31%;*/
     text-transform: uppercase;
     text-align: center;
     font-size: 125%;
 }
 
+/* Help button and icon */
+
 .uk-navbar-right {
     margin-right: 10px;
     font-size: 150%;
 }
+
+/* Navbar Container */
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
     height: 5%;
@@ -28,7 +30,7 @@
 
 /*--------------- Mobile Homepage ---------------*/
 
-/*Entire switcher bar*/
+/* Entire switcher bar */
 
 ul.uk-subnav.uk-subnav-pill {
     background-color: #00b3b3;
@@ -38,47 +40,45 @@ ul.uk-subnav.uk-subnav-pill {
     margin-left: 150px;
 }
 
-/*Switcher tab*/
+/* Switcher tab */
 
 ul.uk-subnav.uk-subnav-pill>li {
     padding: 0px;
 }
+
+/* Switcher tab text */
 
 .uk-subnav-pill>*>:first-child {
     color: white;
     font-size: 46px;
 }
 
-/*Active switcher tab*/
+/* Active switcher tab */
 
 .uk-subnav-pill>.uk-active>a {
     background-color: #006666;
 }
 
-.circle {
-    /*
+/* Just a plain circle to fill in where the real circle will go */
+
+/*.circle {
+    
     width: 600px;
     height: 600px;
     border-radius: 50%;
     border: solid;
-    */
-}
+    
+}*/
 
-*/ .uk-button-group>.uk-button:nth-child(n+1) {
-    margin-left: 2px;
-    /*max-height: 25px;*/
-    line-height: 0px;
-    background-color: gray;
-    color: white;
-    width: 100%;
-    font-size: 4em;
-}
+/* Vocab and grammar button groups */
 
 button.uk-button {
     padding: 2px 75px;
     font-size: 2.5em;
     margin-right: 5px;
 }
+
+/* Circular buttons */
 
 #vocabIcon,
 #grammarIcon,
@@ -98,30 +98,44 @@ button.uk-button {
     margin-right: 20px;
 }
 
+/* My Progress Container */
+
 div#my-progress.uk-container.uk-position-center.uk-active {
     width: 800px;
 }
 
+/* To change color of G icon */
+
 #grammarIcon {
     background-color: rgb(255, 166, 0);
 }
+
+/* Container holding the four skill buttons */
 
 div#four-categories.uk-button-group.uk-width-expand {
     margin-left: 280px;
     margin-top: 100px;
 }
 
+/* To change color of R icon */
+
 #readicon {
     background-color: rgb(194, 98, 34);
 }
+
+/* To change color of S icon */
 
 #speakIcon {
     background-color: rgb(21, 88, 105);
 }
 
+/* To change color of W icon */
+
 #writeIcon {
     background-color: rgb(121, 170, 74);
 }
+
+/* To change color of L icon */
 
 #listenIcon {
     background-color: orange;
@@ -129,21 +143,28 @@ div#four-categories.uk-button-group.uk-width-expand {
 
 /*--------------- Bottom Navbar ---------------*/
 
+/* Entire navbar */
+
 #bottom-nav {
     bottom: 70;
     position: absolute;
 }
+
+/* Icons */
 
 .uk-navbar-nav>li>a {
     color: gray;
     height: 5px;
 }
 
+/* Container around text underneath icons */
+
 .uk-navbar-nav>li {
-    /*width: 70px;*/
     width: 100%;
     text-align: center;
 }
+
+/* Text underneath icons */
 
 .uk-navbar-nav>li>p {
     padding: 10px;
@@ -151,15 +172,15 @@ div#four-categories.uk-button-group.uk-width-expand {
     font-size: 30px;
 }
 
-.uk-navbar-nav {
-    width: 100%;
-}
+/* Current page's icon */
 
 #active-button {
     color: rgb(14, 109, 126);
 }
 
 /*--------------- Reading Page ---------------*/
+
+/*  */
 
 #function-button {
     margin-top: 15px;
@@ -172,6 +193,8 @@ div#four-categories.uk-button-group.uk-width-expand {
     border-radius: 5px;
 }
 
+/*  */
+
 #level-test-button {
     float: right;
     width: 25%;
@@ -180,16 +203,22 @@ div#four-categories.uk-button-group.uk-width-expand {
     border-radius: 5px;
 }
 
+/*  */
+
 .uk-divider-small::after {
     width: 100%;
     border-top: 3px solid gray;
 }
+
+/*  */
 
 p {
     font-size: 30px;
 }
 
 /*--------------- Vocabulary Page ---------------*/
+
+/*  */
 
 #practice-button,
 #test-button {
@@ -204,15 +233,21 @@ p {
     margin-left: 10px;
 }
 
+/*  */
+
 #test-button {
     background-color: rgb(72, 136, 43);
 }
+
+/*  */
 
 #vocab-container {
     margin-top: 60%;
     margin-left: 5%;
     width: 800px;
 }
+
+/*  */
 
 #level-container {
     border: solid rgb(182, 181, 181);
@@ -223,40 +258,43 @@ p {
 
 /*--------------- Goals Page ---------------*/
 
+/*  */
+
 #goal-button {
     background-color: rgb(34, 116, 111);
     color: white;
     margin-top: 5%;
-    /*height: 30px;*/
     height: 5%;
-    /*width: 250px;*/
     width: 100%;
-    /*padding: 0px;*/
-    /*line-height: 0px;*/
     font-size: 250%;
 }
 
 /*--------------- Gathering Page ---------------*/
 
+/*  */
+
 .uk-accordion-title {
     background-color: rgb(34, 116, 111);
-    /*width: 300px;
-    height: 30px;*/
     width: 100%;
     height: 4%;
     color: white;
-    /*line-height: 1.5;*/
     font-size: 250%;
 }
+
+/*  */
 
 .uk-accordion-title:hover,
 .uk-accordion-title:focus {
     color: white;
 }
 
+/*  */
+
 .uk-accordion {
-    margin: 0px 40px;
+    margin: 20px 40px;
 }
+
+/*  */
 
 .uk-accordion-title::after {
     background-image: none;
@@ -266,16 +304,5 @@ p {
 /*--------------- Media Query ---------------*/
 
 /*@media screen and (max-width: 1200px) {
-    #my-progress,
-    #todays-goals {
-        display: none;
-    }
-    #bottom-nav {
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-    }
+
 }*/
