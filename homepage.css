@@ -180,7 +180,7 @@ div#four-categories.uk-button-group.uk-width-expand {
 
 /*--------------- Reading Page ---------------*/
 
-/*  */
+/* Four orange buttons */
 
 #function-button {
     margin-top: 15px;
@@ -193,7 +193,7 @@ div#four-categories.uk-button-group.uk-width-expand {
     border-radius: 5px;
 }
 
-/*  */
+/* Level Test Button */
 
 #level-test-button {
     float: right;
@@ -203,14 +203,14 @@ div#four-categories.uk-button-group.uk-width-expand {
     border-radius: 5px;
 }
 
-/*  */
+/* Divider under function buttons */
 
 .uk-divider-small::after {
     width: 100%;
     border-top: 3px solid gray;
 }
 
-/*  */
+/* 'Overall Level Progress' Text */
 
 p {
     font-size: 30px;
@@ -218,28 +218,25 @@ p {
 
 /*--------------- Vocabulary Page ---------------*/
 
-/*  */
+/* 8 practice and test buttons */
 
 #practice-button,
 #test-button {
     width: 45%;
     height: 4%;
-    line-height: 0px;
     background-color: rgb(41, 185, 178);
     color: white;
     font-size: 1.75rem;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 10px;
 }
 
-/*  */
+/* Change color of test button */
 
 #test-button {
     background-color: rgb(72, 136, 43);
 }
 
-/*  */
+/* Container holding all levels */
 
 #vocab-container {
     margin-top: 60%;
@@ -247,7 +244,7 @@ p {
     width: 800px;
 }
 
-/*  */
+/* Container holding two buttons */
 
 #level-container {
     border: solid rgb(182, 181, 181);
@@ -258,7 +255,7 @@ p {
 
 /*--------------- Goals Page ---------------*/
 
-/*  */
+/* Five buttons */
 
 #goal-button {
     background-color: rgb(34, 116, 111);
@@ -271,7 +268,7 @@ p {
 
 /*--------------- Gathering Page ---------------*/
 
-/*  */
+/* Four accordion buttons */
 
 .uk-accordion-title {
     background-color: rgb(34, 116, 111);
@@ -281,24 +278,17 @@ p {
     font-size: 250%;
 }
 
-/*  */
+/* Keeps text color of accordion white */
 
 .uk-accordion-title:hover,
 .uk-accordion-title:focus {
     color: white;
 }
 
-/*  */
+/* Size of accordion buttons */
 
 .uk-accordion {
     margin: 20px 40px;
-}
-
-/*  */
-
-.uk-accordion-title::after {
-    background-image: none;
-    float: none;
 }
 
 /*--------------- Media Query ---------------*/
