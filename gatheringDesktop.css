@@ -1,5 +1,7 @@
 /*--------------- Desktop Gathering Page ---------------*/
 
+/*  */
+
 .uk-card-body {
     padding: 0px;
     margin: 15px 50px;
@@ -7,6 +9,8 @@
     border: solid rgba(128, 128, 128, 0.246);
     border-width: 2px;
 }
+
+/*  */
 
 button.uk-button.unit-buttons {
     border: solid gray;
@@ -21,6 +25,8 @@ button.uk-button.unit-buttons {
     margin-left: 5px;
 }
 
+/*  */
+
 div.uk-grid-small {
     margin-left: 150px;
     margin-top: 0px;
@@ -28,10 +34,14 @@ div.uk-grid-small {
     float: right;
 }
 
+/*  */
+
 button.uk-button.unit-buttons.button-seven {
     margin-left: 117px;
     max-width: 102px;
 }
+
+/*  */
 
 .uk-card-title {
     padding: 20px;
@@ -39,33 +49,49 @@ button.uk-button.unit-buttons.button-seven {
     text-align: center;
 }
 
+/*  */
+
 #unit-one {
     background-color: rgb(14, 87, 155);
 }
+
+/*  */
 
 #unit-two {
     background-color: rgb(30, 170, 170);
 }
 
+/*  */
+
 #unit-three {
     background-color: rgb(122, 167, 70);
 }
+
+/*  */
 
 #unit-four {
     background-color: rgb(194, 46, 46);
 }
 
+/*  */
+
 #unit-five {
     background-color: rgb(224, 129, 39);
 }
+
+/*  */
 
 #unit-six {
     background-color: rgb(228, 156, 24);
 }
 
+/*  */
+
 #unit-seven {
     background-color: rgb(68, 163, 119);
 }
+
+/*  */
 
 #sidenav {
     background-color: rgb(244, 173, 37);
@@ -76,6 +102,8 @@ button.uk-button.unit-buttons.button-seven {
     padding-left: 0px;
 }
 
+/*  */
+
 #side-nav-button {
     padding-top: 15px;
     padding-right: 10px;
@@ -84,11 +112,15 @@ button.uk-button.unit-buttons.button-seven {
     border-bottom: solid white;
 }
 
+/*  */
+
 #pathway-logo {
     width: 130px;
     max-width: 150px;
     border-bottom: solid white;
 }
+
+/*  */
 
 ul {
     list-style-type: none;
@@ -97,6 +129,8 @@ ul {
     width: 130px;
     margin-top: 115px;
 }
+
+/*  */
 
 #breadcrumb {
     margin: 0px 340px;
