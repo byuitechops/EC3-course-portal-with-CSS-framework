@@ -31,7 +31,7 @@
 
 
     <!--Switcher tabs-->
-    <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" uk-switcher>
+    <ul class="uk-subnav uk-subnav-pill" uk-switcher>
         <li>
             <a href="#">MY PROGRESS</a>
         </li>
@@ -41,18 +41,19 @@
     </ul>
 
     <!--Four skill buttons-->
-    <div class="uk-button-group uk-width-expand" id="four-categories">
-        <button class="uk-button-small" id="readIcon" onclick="window.location.href='reading.html'">R</button>
-        <button class="uk-button-small" id="writeIcon">W</button>
-        <button class="uk-button-small" id="speakIcon">S</button>
-        <button class="uk-button-small" id="listenIcon">L</button>
+    <div class="uk-container">
+        <div class="uk-button-group uk-width-expand" id="four-categories">
+            <button class="uk-button-small" id="readIcon" onclick="window.location.href='reading.html'">R</button>
+            <button class="uk-button-small" id="writeIcon">W</button>
+            <button class="uk-button-small" id="speakIcon">S</button>
+            <button class="uk-button-small" id="listenIcon">L</button>
+        </div>
     </div>
-
 
     <!--Switcher Content-->
     <ul class="uk-switcher uk-margin">
         <!--Container holding vocab and grammar parts-->
-        <div class="uk-container uk-position-center" id="my-progress">
+        <div class="uk-container uk-position-bottom" id="my-progress">
             <!--Vocabulary buttons-->
             <div class="uk-button-group uk-width-expand" id="square-edges">
                 <button class="uk-button-small" id="vocabIcon" disabled>V</button>
@@ -80,7 +81,7 @@
     </ul>
 
     <!--Bottom Navbar-->
-    <nav class="uk-navbar-container" id="bottom-nav">
+    <nav class="uk-navbar-container uk-position-bottom" id="bottom-nav">
         <ul class="uk-navbar-nav">
             <!--Home Button Icon-->
             <li id="active-button">

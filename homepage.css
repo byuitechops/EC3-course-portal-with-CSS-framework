@@ -100,8 +100,12 @@ button.uk-button {
 
 /* My Progress Container */
 
-div#my-progress.uk-container.uk-position-center.uk-active {
-    width: 800px;
+div#my-progress.uk-container.uk-active {
+    width: 82%;
+    position: fixed;
+    bottom: 25%;
+    padding: 0px;
+    max-width: 830px;
 }
 
 /* To change color of G icon */
@@ -113,8 +117,9 @@ div#my-progress.uk-container.uk-position-center.uk-active {
 /* Container holding the four skill buttons */
 
 div#four-categories.uk-button-group.uk-width-expand {
-    margin-left: 280px;
-    margin-top: 100px;
+    /*margin-top: 10%;
+    margin-left: 30%;*/
+    width: 100%;
 }
 
 /* To change color of R icon */
@@ -239,9 +244,9 @@ p {
 /* Container holding all levels */
 
 #vocab-container {
-    margin-top: 60%;
-    margin-left: 5%;
-    width: 800px;
+    /*margin-top: 60%;*/
+    width: 90%;
+    margin-top: 40px;
 }
 
 /* Container holding two buttons */
@@ -273,9 +278,10 @@ p {
 .uk-accordion-title {
     background-color: rgb(34, 116, 111);
     width: 100%;
-    height: 4%;
+    height: 5%;
     color: white;
     font-size: 250%;
+    line-height: 1.3;
 }
 
 /* Keeps text color of accordion white */
@@ -293,6 +299,25 @@ p {
 
 /*--------------- Media Query ---------------*/
 
-/*@media screen and (max-width: 1200px) {
-
-}*/
+@media screen and (min-width: 1000px) {
+    ul.uk-subnav.uk-subnav-pill {
+        width: 313px;
+        height: 50px;
+        margin-left: 42%;
+    }
+    /* Switcher tab */
+    ul.uk-subnav.uk-subnav-pill>li {
+        padding: 0px;
+    }
+    /* Switcher tab text */
+    .uk-subnav-pill>*>:first-child {
+        color: white;
+        line-height: 50px;
+        padding: 0 10px;
+        font-size: 20px;
+    }
+    div#four-categories.uk-button-group.uk-width-expand {
+        margin-left: 34%;
+        width: 50%;
+    }
+}
