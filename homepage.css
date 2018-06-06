@@ -303,7 +303,8 @@ p {
     ul.uk-subnav.uk-subnav-pill {
         width: 313px;
         height: 50px;
-        margin-left: 42%;
+        margin-left: 37%;
+        margin-bottom: 50px;
     }
     /* Switcher tab */
     ul.uk-subnav.uk-subnav-pill>li {
