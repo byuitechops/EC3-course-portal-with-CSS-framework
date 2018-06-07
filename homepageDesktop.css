@@ -1,3 +1,7 @@
+html {
+    font-family: "Open Sans" !important;
+}
+
 /*--------------- Desktop Home Page ---------------*/
 
 #desktop-my-progress {
@@ -10,6 +14,7 @@
 #desktop-my-progress>.uk-card-title {
     background-color: #086470;
     color: white;
+    text-transform: uppercase;
 }
 
 #desktop-todays-goals {
@@ -21,6 +26,7 @@
 #desktop-todays-goals>.uk-card-title {
     background-color: #086470;
     color: white;
+    text-transform: uppercase;
 }
 
 #vocabIcon-desktop,

@@ -1,3 +1,12 @@
+html {
+    font-family: "Open Sans" !important;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
 /*--------------- Top Navbar ---------------*/
 
 /* EnglishConnect Text and Subnav under it */
@@ -50,7 +59,7 @@ ul.uk-subnav.uk-subnav-pill>li {
 
 .uk-subnav-pill>*>:first-child {
     color: white;
-    font-size: 46px;
+    font-size: 41px;
 }
 
 /* Active switcher tab */
@@ -151,8 +160,10 @@ div#four-categories.uk-button-group.uk-width-expand {
 /* Entire navbar */
 
 #bottom-nav {
-    bottom: 70;
-    position: absolute;
+    bottom: 0;
+    position: fixed;
+    background-color: white;
+    padding-top: 50px;
 }
 
 /* Icons */
@@ -181,6 +192,10 @@ div#four-categories.uk-button-group.uk-width-expand {
 
 #active-button {
     color: rgb(14, 109, 126);
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    height: 0;
 }
 
 /*--------------- Reading Page ---------------*/
@@ -273,6 +288,98 @@ p {
 
 /*--------------- Gathering Page ---------------*/
 
+.uk-card-body {
+    padding: 20px 20px;
+    margin: 15px 50px;
+    width: 90%;
+    height: 30%;
+    border: solid rgba(128, 128, 128, 0.438);
+    border-width: 2px;
+    margin-bottom: 50px;
+}
+
+/*  */
+
+button.uk-button.unit-buttons {
+    border: solid gray;
+    border-radius: 5px;
+    width: 35%;
+    /*max-width: 120px;*/
+    height: 17%;
+    text-transform: none;
+    margin: 5px;
+    padding: 0;
+    line-height: 15px;
+    margin-left: 80px;
+    font-size: 35px;
+}
+
+/*  */
+
+div.uk-grid-small {
+    margin-left: 150px;
+    margin-top: 0px;
+    width: 1630px;
+    float: right;
+}
+
+/*  */
+
+button.uk-button.unit-buttons.button-seven {
+    margin-left: 265px;
+}
+
+/*  */
+
+.uk-card-title {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*  */
+
+#unit-one {
+    background-color: rgb(14, 87, 155);
+}
+
+/*  */
+
+#unit-two {
+    background-color: rgb(30, 170, 170);
+}
+
+/*  */
+
+#unit-three {
+    background-color: rgb(122, 167, 70);
+}
+
+/*  */
+
+#unit-four {
+    background-color: rgb(194, 46, 46);
+}
+
+/*  */
+
+#unit-five {
+    background-color: rgb(224, 129, 39);
+}
+
+/*  */
+
+#unit-six {
+    background-color: rgb(228, 156, 24);
+}
+
+/*  */
+
+#unit-seven {
+    background-color: rgb(68, 163, 119);
+}
+
 /* Four accordion buttons */
 
 .uk-accordion-title {
@@ -295,6 +402,10 @@ p {
 
 .uk-accordion {
     margin: 20px 40px;
+}
+
+a.uk-accordion-title::after {
+    background-image: none;
 }
 
 /*--------------- Media Query ---------------*/
