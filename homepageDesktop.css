@@ -53,37 +53,39 @@ button.uk-button {
 }
 
 #square-edges {
-    width: 70px;
-    height: 40px;
-}
-
-.circle-desktop {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: solid;
-    margin-left: 180px;
+    width: 80px;
+    height: 35px;
+    color: white;
+    background-color: rgba(151, 150, 150, 0.781);
 }
 
 #desktop-divider.uk-divider-small::after {
     width: 690px;
+    margin-bottom: 25%;
 }
 
 #vocab-grammar-container {
-    width: 350px;
-    margin-right: 0px;
-    margin-left: 150px;
-    margin-top: 50px;
+    width: 400px;
+    margin-bottom: 8%;
     padding: 0px;
 }
 
 #sidenav {
     background-color: rgb(244, 173, 37);
-    /* background-color: rgb(247, 173, 37);*/
     margin-left: 0px;
     width: 90px;
     margin-right: 50px;
     padding-left: 0px;
+    height: 130%;
+}
+
+#side-nav-box {
+    list-style-type: none;
+    padding: 0px;
+    background-color: rgb(196, 191, 191);
+    width: 130px;
+    margin-top: 115px;
+    border-top: solid white;
 }
 
 #side-nav-button {
@@ -95,9 +97,8 @@ button.uk-button {
 }
 
 #pathway-logo {
-    width: 130px;
-    max-width: 150px;
-    border-bottom: solid white;
+    width: 90%;
+    margin-left: 5px;
 }
 
 ul {
@@ -159,4 +160,13 @@ div.uk-grid-small {
 .uk-navbar-container:not(.uk-navbar-transparent) {
     height: 5%;
     margin-bottom: 10px;
+}
+
+#circle {
+    height: 55%;
+    margin-top: 15%;
+}
+
+#EC3-logo {
+    height: 80%;
 }

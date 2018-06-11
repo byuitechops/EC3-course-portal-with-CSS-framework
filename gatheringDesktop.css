@@ -154,9 +154,8 @@ button.uk-button.unit-buttons.button-seven {
 /*  */
 
 #pathway-logo {
-    width: 130px;
-    max-width: 150px;
-    border-bottom: solid white;
+    width: 90%;
+    margin-left: 5px;
 }
 
 /*  */
@@ -167,6 +166,7 @@ button.uk-button.unit-buttons.button-seven {
     background-color: rgb(196, 191, 191);
     width: 130px;
     margin-top: 115px;
+    border-top: solid white;
 }
 
 /*  */

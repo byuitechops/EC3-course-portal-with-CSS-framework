@@ -42,32 +42,33 @@
     </ul>
 
 
-    <!--Four skill buttons-->
-    <div class="uk-container">
-        <div class="uk-button-group uk-width-expand" id="four-categories">
-            <button class="uk-button-small" id="readIcon" onclick="window.location.href='reading.html'">R</button>
-            <button class="uk-button-small" id="writeIcon">W</button>
-            <button class="uk-button-small" id="speakIcon">S</button>
-            <button class="uk-button-small" id="listenIcon">L</button>
-        </div>
-    </div>
+
+
 
     <!--Switcher Content-->
     <ul class="uk-switcher uk-margin">
+
         <!--Container holding vocab and grammar parts-->
-        <div class="uk-container uk-position-bottom" id="my-progress">
+        <div class="uk-container">
+            <!--Four skill buttons-->
+            <div class="uk-button-group uk-width-expand" id="four-categories">
+                <button class="uk-button-small" id="readIcon" onclick="window.location.href='reading.html'">R</button>
+                <button class="uk-button-small" id="writeIcon">W</button>
+                <button class="uk-button-small" id="speakIcon">S</button>
+                <button class="uk-button-small" id="listenIcon">L</button>
+            </div>
+            <img class="uk-position-top-center" src="./images/ColorWheelGray.png" alt="Color Wheel" id="circle">
             <!--Vocabulary buttons-->
-            <div class="uk-button-group uk-width-expand" id="square-edges">
+            <div class="uk-button-group uk-position-bottom-center" id="square-edges">
                 <button class="uk-button-small" id="vocabIcon" disabled>V</button>
                 <button class="uk-button" onclick="window.location.href='vocab.html'">1</button>
                 <button class="uk-button">2</button>
                 <button class="uk-button">3</button>
                 <button class="uk-button">4</button>
             </div>
-            <br>
-            <br>
+
             <!--Grammar Buttons-->
-            <div class="uk-button-group id=">
+            <div class="uk-button-group uk-position-bottom-center" id="square-edges2">
                 <button class="uk-button-small" id="grammarIcon" disabled>G</button>
                 <button class="uk-button">1</button>
                 <button class="uk-button">2</button>
@@ -78,7 +79,7 @@
 
         <!--Container holding goals-->
         <div class='uk-container' id="todays-goals ">
-            <h2>Here is where the goals will go:</h2>
+            <h2>Please use your goal tracker to track your goals.</h2>
         </div>
     </ul>
 
@@ -87,27 +88,37 @@
         <ul class="uk-navbar-nav">
             <!--Home Button Icon-->
             <li id="active-button">
-                <a href="#" uk-icon="icon: home; ratio:4" id="active-button"></a>
+                <a href="#" id="active-button">
+                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png" width="110" height="100">
+                </a>
                 <p>Home</p>
             </li>
             <!--Goals Button Icon-->
             <li>
-                <a href="goals.html" uk-icon="icon: star; ratio:4"></a>
+                <a href="goals.html">
+                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png" width="120" height="100">
+                </a>
                 <p>Goals</p>
             </li>
             <!--Gathering Button Icon-->
             <li>
-                <a href="gathering.html" uk-icon="icon: users; ratio:4"></a>
+                <a href="gathering.html">
+                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png" width="110" height="100">
+                </a>
                 <p>Gathering</p>
             </li>
             <!--Feedback Button Icon-->
             <li>
-                <a href="#" uk-icon="icon: comments; ratio:4"></a>
+                <a href="feedback.html">
+                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png" width="120" height="100">
+                </a>
                 <p>Feedback</p>
             </li>
             <!--Learning to Learn Button Icon-->
             <li>
-                <a href="learningToLearn.html" uk-icon="icon: info; ratio:4"></a>
+                <a href="learningToLearn.html">
+                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png" width="130" height="100">
+                </a>
                 <p>Learning to Learn</p>
             </li>
         </ul>
