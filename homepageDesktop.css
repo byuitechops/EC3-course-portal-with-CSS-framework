@@ -170,3 +170,18 @@ div.uk-grid-small {
 #EC3-logo {
     height: 80%;
 }
+
+/*****************************NEW STUFF**********************************/
+
+#goal-button {
+    background-color: rgb(34, 116, 111);
+    color: white;
+    margin-top: 5%;
+    height: 5%;
+    width: 100%;
+    font-size: 250%;
+}
+
+#desktop-feedback {
+    margin-left: 200px;
+}
