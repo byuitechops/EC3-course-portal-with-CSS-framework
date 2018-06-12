@@ -2,15 +2,17 @@
 
 <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EC-3 Home</title>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
-    <link rel="stylesheet" href="homepage.css" type="text/css">
+    <link rel="stylesheet" href="homepages.css" type="text/css">
+    <link rel="stylesheet" href="homepagesDesktop.css" type="text/css">
 </head>
 
 <body>
+
     <!--Top Navbar-->
     <nav class="uk-navbar-container uk-margin" uk-navbar>
         <div class="uk-navbar-center">
@@ -19,7 +21,7 @@
             </a>
         </div>
         <div class="uk-navbar-right">
-            <a href="" uk-icon="icon: question; ratio:2">Help</a>
+            <a href="" uk-icon="icon: question; ratio:1">Help</a>
         </div>
     </nav>
 
@@ -30,9 +32,40 @@
         <hr class="uk-divider-small">
     </div>
 
+    <p style="display: none;" id="breadcrumb">
+        <b>HOME</b>
+    </p>
+
+    <div style="display: none;" class="uk-container uk-position-left" id="sidenav">
+        <ul id="side-nav-box">
+            <img class="uk-position-left" src="./images/BYU-PW_Icon_White.png" alt="pathway logo" id="pathway-logo">
+            <br>
+            <li id="side-nav-button">
+                <a href="#" uk-icon="icon: home; ratio:1.5"></a>
+                <p>Home</p>
+            </li>
+            <li id="side-nav-button">
+                <a href="goalsDesktop.html" uk-icon="icon: star; ratio:1.5 "></a>
+                <p>Goals</p>
+            </li>
+            <li id="side-nav-button">
+                <a href="gatheringDesktop.html" uk-icon="icon: users; ratio:1.5"></a>
+                <p>Gathering</p>
+            </li>
+            <li id="side-nav-button">
+                <a href="feedbackDesktop.html" uk-icon="icon: comments; ratio:1.5"></a>
+                <p>Feedback</p>
+            </li>
+            <li id="side-nav-button">
+                <a href="learningToLearnDesktop.html" uk-icon="icon: info; ratio:1.5"></a>
+                <p>Learning to Learn</p>
+            </li>
+        </ul>
+    </div>
+
+
 
     <!--Switcher tabs-->
-
     <ul class="uk-subnav uk-subnav-pill" uk-switcher>
         <li>
             <a href="#">MY PROGRESS</a>
@@ -41,10 +74,6 @@
             <a href="#">TODAY'S GOALS</a>
         </li>
     </ul>
-
-
-
-
 
     <!--Switcher Content-->
     <ul class="uk-switcher uk-margin">
@@ -80,7 +109,7 @@
 
         <!--Container holding goals-->
         <div class='uk-container' id="todays-goals ">
-            <h2>Please use your goal tracker to track your goals.</h2>
+            <h3>Please use your goal tracker to track your goals.</h3>
         </div>
     </ul>
 
@@ -90,40 +119,60 @@
             <!--Home Button Icon-->
             <li id="active-button">
                 <a href="#" id="active-button">
-                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png" width="110" height="100">
+                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png">
                 </a>
                 <p>Home</p>
             </li>
             <!--Goals Button Icon-->
             <li>
                 <a href="goals.html">
-                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png" width="120" height="100">
+                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png">
                 </a>
                 <p>Goals</p>
             </li>
             <!--Gathering Button Icon-->
             <li>
                 <a href="gathering.html">
-                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png" width="110" height="100">
+                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png">
                 </a>
                 <p>Gathering</p>
             </li>
             <!--Feedback Button Icon-->
             <li>
                 <a href="feedback.html">
-                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png" width="120" height="100">
+                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png">
                 </a>
                 <p>Feedback</p>
             </li>
             <!--Learning to Learn Button Icon-->
             <li>
                 <a href="learningToLearn.html">
-                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png" width="130" height="100">
+                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png">
                 </a>
                 <p>Learning to Learn</p>
             </li>
         </ul>
     </nav>
+
+
+    <!-- ***************************************************************** -->
+    <div class="bigGuy" style="display: none;">
+
+        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body" id="desktop-my-progress">
+                    <h3 class="uk-card-title">My Progress</h3>
+                    <hr class="uk-divider-small uk-position-bottom-center" id="desktop-divider">
+                    <!--Vocabulary buttons-->
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body" id="desktop-todays-goals">
+                    <h3 class="uk-card-title">Today's Goals</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
