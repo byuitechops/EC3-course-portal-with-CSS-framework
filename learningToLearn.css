@@ -1,0 +1,177 @@
+html {
+    font-family: "Open Sans" !important;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    /*overflow-y: hidden;*/
+}
+
+/*--------------- Top Navbar ---------------*/
+
+/* EnglishConnect Text and Subnav under it */
+
+.uk-logo {
+    font-size: 200%;
+}
+
+/*div.uk-navbar-center {
+    margin-top: 100px;
+}*/
+
+/* Subnav text */
+
+#second-nav {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 125%;
+}
+
+/* Help button and icon */
+
+.uk-navbar-right {
+    margin-right: 10px;
+    font-size: 150%;
+}
+
+/* Navbar Container */
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    height: 5%;
+    margin-bottom: 10px;
+}
+
+/*--------------- Bottom Navbar ---------------*/
+
+/* Entire navbar */
+
+#bottom-nav {
+    position: fixed;
+    background-color: white;
+}
+
+/* Icons */
+
+.uk-navbar-nav>li>a {
+    color: gray;
+    height: 5px;
+}
+
+#thing {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#active-button-thing {
+    color: rgb(14, 109, 126);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Container around text underneath icons */
+
+.uk-navbar-nav>li {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+#nav-icons {
+    padding-bottom: 70px;
+    /* background-color: white; */
+}
+
+/* Text underneath icons */
+
+.uk-navbar-nav>li>p {
+    /*padding: 30px;
+    margin: 17px;*/
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+/* Five buttons */
+
+#goal-button {
+    background-color: rgb(34, 116, 111);
+    color: white;
+    margin-top: 5%;
+    height: 5%;
+    width: 100%;
+    font-size: 250%;
+}
+
+/* Current page's icon */
+
+#active-button {
+    color: rgb(14, 109, 126);
+}
+
+/* Divider under function buttons */
+
+.uk-divider-small::after {
+    width: 100%;
+    border-top: 3px solid gray;
+}
+
+@media screen and (min-width: 1000px) {
+    #breadcrumb {
+        margin: 0px 340px;
+    }
+    h2 {
+        margin-left: 200px;
+    }
+    #second-nav {
+        display: none;
+    }
+    #bottom-nav {
+        display: none;
+    }
+    #sidenav {
+        background-color: rgb(244, 173, 37);
+        margin-left: 0px;
+        width: 90px;
+        margin-right: 50px;
+        padding-left: 0px;
+        height: 130%;
+    }
+    #side-nav-box {
+        list-style-type: none;
+        padding: 0px;
+        background-color: rgb(196, 191, 191);
+        width: 130px;
+        margin-top: 115px;
+        border-top: solid white;
+    }
+    #side-nav-button {
+        padding-top: 0px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+        border-bottom: solid white;
+    }
+    #pathway-logo {
+        width: 90%;
+        margin-left: 5px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        background-color: rgb(196, 191, 191);
+        width: 130px;
+        margin-top: 115px;
+    }
+    div.uk-container {
+        margin-left: 17.5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #breadcrumb {
+        display: none;
+    }
+    #sidenav {
+        display: none;
+    }
+}
