@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+	<style type="text/css">
+		.st1{fill:#BAB9BA;}
+		.st2{fill:#797878;}
+		.st3{font-family:'OpenSans';}
+		.st4{font-size:19px;}
+		.st5{fill:#FFFFFF;}
+		.st6{font-size:27px;}
+	</style>
+	<rect x="300.2" y="61.6" class="st1" width="5.3" height="34.9"/>
+	<rect x="469.1" y="260.2" class="st1" width="34.9" height="5.3"/>
+	<rect x="101.4" y="260.2" class="st1" width="34.9" height="5.3"/>
+	<rect x="300.4" y="430" class="st1" width="5.3" height="34.9"/>
+	<text transform="matrix(1 0 0 1 425.5917 132.6592)" class="st2 st3 st4">WRITING</text>
+	<text transform="matrix(1 0 0 1 99.925 132.6592)" class="st2 st3 st4">READING</text>
+	<text transform="matrix(1 0 0 1 100.2584 406.5232)" class="st2 st3 st4">SPEAKING</text>
+	<text transform="matrix(1 0 0 1 410.2585 406.5233)" class="st2 st3 st4">LISTENING</text>
+	<g class="reading1">
+		<path class="st2" d="M214,260.4c0.3-10.4,2.4-20.3,6-29.5l-65.6-27.2c-7,17.6-11,36.7-11.3,56.7H214z"/>
+		<text transform="matrix(1 0 0 1 163.0093 245.7969)" class="st5 st3 st6">1</text>
+	</g>
+	<g class="reading2">
+			<path class="st2" d="M222.1,226c4.1-8.9,9.6-17,16.2-24L188,151.8c-13.1,13.6-23.9,29.5-31.6,47L222.1,226z"/>
+			<text transform="matrix(1 0 0 1 185.0835 199.2275)" class="st5 st3 st6">2</text>
+	</g>
+	<g class="reading3">
+		<path class="st2" d="M242,198.2c7.2-6.8,15.5-12.4,24.6-16.5l-27.2-65.6c-17.8,7.7-33.9,18.6-47.6,31.9L242,198.2z"/>
+		<text transform="matrix(1 0 0 1 221.3335 164.6543)" class="st5 st3 st6">3</text>
+	</g>
+	<g class="reading4">
+		<path class="st2" d="M271.5,179.8c9-3.4,18.7-5.4,28.9-5.7v-71c-19.8,0.3-38.7,4.2-56.1,11.1L271.5,179.8z"/>
+		<text transform="matrix(1 0 0 1 267.7595 143.4043)" class="st5 st3 st6">4</text>
+	</g>
+	<g class="writing1">
+		<path class="st2" d="M305.6,174c10.1,0.3,19.9,2.3,28.9,5.7l27.2-65.6c-17.4-6.9-36.3-10.8-56.1-11.1V174z"/>
+		<text transform="matrix(1 0 0 1 321.6759 144.0709)" class="st5 st3 st6">1</text>
+	</g>
+	<g class="writing2">
+		<path class="st2" d="M339.4,181.8c9,4,17.2,9.6,24.4,16.2l50.2-50.2c-13.7-13.2-29.7-24-47.4-31.6L339.4,181.8z"/>
+		<text transform="matrix(1 0 0 1 368.8813 163.2275)" class="st5 st3 st6">2</text>
+	</g>
+	<g class="writing3">
+		<path class="st2" d="M417.7,151.5l-50.2,50.2c6.9,7.2,12.5,15.6,16.7,24.8l65.6-27.2 C442.1,181.5,431.1,165.3,417.7,151.5z"/>
+		<text transform="matrix(1 0 0 1 404.3335 197.9965)" class="st5 st3 st6">3</text>
+	</g>
+	<g class="writing4">
+		<path class="st2" d="M386.2,231.4c3.4,9,5.4,18.8,5.7,29h71c-0.3-19.8-4.2-38.7-11.1-56.1L386.2,231.4z"/>
+		<text transform="matrix(1 0 0 1 425.4262 244.7968)" class="st5 st3 st6">4</text>
+	</g>
+	<g class="listening1">
+		<path class="st2" d="M392,265.6c-0.3,10-2.2,19.5-5.5,28.4l65.6,27.2c6.8-17.3,10.6-36,10.9-55.6H392z"/>
+		<text transform="matrix(1 0 0 1 425.9263 297.9044)" class="st5 st3 st6">1</text>
+	</g>
+	<g class="listening2">
+		<path class="st2" d="M384.4,298.9c-4.1,9.3-9.8,17.8-16.7,25.1l50.2,50.2c13.4-13.9,24.3-30.1,32.1-48.1 L384.4,298.9z"/>
+		<text transform="matrix(1 0 0 1 403.8018 344.1899)" class="st5 st3 st6">2</text>
+	</g>
+	<g class="listening3">
+		<path class="st2" d="M364,327.8c-7.1,6.7-15.4,12.3-24.5,16.4l27.2,65.6c17.7-7.7,33.8-18.5,47.5-31.8L364,327.8z"/>
+		<text transform="matrix(1 0 0 1 370.0056 380.9044)" class="st5 st3 st6">3</text>
+	</g>
+	<g class="listening4">
+		<path class="st2" d="M334.7,346.2c-9.1,3.5-18.8,5.5-29,5.8v71c19.8-0.3,38.8-4.2,56.2-11.1L334.7,346.2z"/>
+		<text transform="matrix(1 0 0 1 320.0095 400.6718)" class="st5 st3 st6">4</text>
+	</g>
+	<g class="speaking1">
+		<path class="st2" d="M300.4,352c-10.2-0.3-20-2.3-29-5.8l-27.2,65.6c17.4,6.9,36.4,10.8,56.2,11.1V352z"/>
+		<text transform="matrix(1 0 0 1 269.2598 400.1543)" class="st5 st3 st6">1</text>
+	</g>
+	<g class="speaking2">
+		<path class="st2" d="M266.4,344.2c-9.2-4.1-17.5-9.8-24.7-16.6l-50.2,50.2c13.8,13.4,29.9,24.3,47.7,32 L266.4,344.2z"/>
+		<text transform="matrix(1 0 0 1 222.3259 380.9042)" class="st5 st3 st6">2</text>
+	</g>
+	<g class="speaking3">
+		<path class="st2" d="M238,323.8c-6.6-7.1-12.1-15.3-16.2-24.3l-65.6,27.2c7.7,17.7,18.4,33.7,31.6,47.3L238,323.8z"/>
+		<text transform="matrix(1 0 0 1 187.1873 346.2658)" class="st5 st3 st6">3</text>
+	</g>
+	<g class="speaking4">
+		<path class="st2" d="M219.8,294.6c-3.4-9-5.4-18.8-5.7-29h-71c0.3,19.8,4.2,38.7,11.1,56.1L219.8,294.6z"/>
+		<text transform="matrix(1 0 0 1 164.0094 297.9043)" class="st5 st3 st6">4</text>
+	</g>
+
+	<image style="overflow:visible;" width="654" height="654"
+		xlink:href="../../../../Downloads/ECI_Writing.png"  transform="matrix(6.891882e-002 0 0 6.891882e-002 439.6801 61.625)"></image>
+	<image style="overflow:visible;" width="654" height="654"
+		xlink:href="../../../../Downloads/ECI_Speaking.png"  transform="matrix(6.891882e-002 0 0 6.891882e-002 120.497 419.1927)"></image>
+	<image style="overflow:visible;" width="654" height="654"
+		xlink:href="../../../../Downloads/ECI_Reading.png"  transform="matrix(6.891882e-002 0 0 6.891882e-002 120.497 61.625)"></image>
+	<image style="overflow:visible;" width="654" height="654"
+		xlink:href="../../../../Downloads/ECI_Listening.png"  transform="matrix(6.891882e-002 0 0 6.891882e-002 439.6801 419.1927)"></image>
+</svg>

@@ -1,469 +1,213 @@
-html {
-    font-family: "Open Sans" !important;
-}
-
-body {
-    height: 100%;
-    min-height: 100%;
-    /*overflow-y: hidden;*/
-}
-
-/*--------------- Top Navbar ---------------*/
-
-/* EnglishConnect Text and Subnav under it */
-
-.uk-logo {
-    font-size: 200%;
-}
-
-/*div.uk-navbar-center {
-    margin-top: 100px;
-}*/
-
-/* Subnav text */
-
-#second-nav {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 125%;
-}
-
-/* Help button and icon */
-
-.uk-navbar-right {
-    margin-right: 10px;
-    font-size: 150%;
-}
-
-/* Navbar Container */
-
-.uk-navbar-container:not(.uk-navbar-transparent) {
-    height: 5%;
-    margin-bottom: 10px;
-}
-
-/*--------------- Mobile Homepage ---------------*/
-
-/* Entire switcher bar */
-
-ul.uk-subnav.uk-subnav-pill {
-    background-color: #00b3b3;
-    width: 68.5%;
-    height: 4.7%;
-    margin-top: 50px;
-    margin-left: 150px;
-}
-
-ul.uk-subnav.uk-subnav-pill>li {
-    background-color: #00b3b3;
-}
-
-/* Switcher tab */
-
-ul.uk-subnav.uk-subnav-pill>li {
-    padding: 0px;
-}
-
-ul.uk-navbar-nav>li>p {
-    margin-bottom: 0;
-}
-
-/* Switcher tab text */
-
-.uk-subnav-pill>*>:first-child {
-    color: white;
-    font-size: 41px;
-}
-
-/* Active switcher tab */
-
-.uk-subnav-pill>.uk-active>a {
-    background-color: #006666;
-    height: 87%;
-}
-
-#circle {
-    width: 75%;
-    margin-top: 450px;
-}
-
-/* Vocab and grammar button groups */
-
-button.uk-button {
-    padding: 2px 75px;
-    font-size: 2.5em;
-    margin-right: 5px;
-}
-
-/* Circular buttons */
-
-#readicon,
-#speakIcon,
-#writeIcon,
-#listenIcon {
-    background-color: #299999;
-    color: white;
-    filter: brightness(110%);
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    font-family: serif;
-    font-size: 4em;
-    padding: 0px 15px;
-    margin-left: 112px;
-}
-
-#vocabIcon,
-#grammarIcon {
-    background-color: #299999;
-    color: white;
-    filter: brightness(110%);
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    font-family: serif;
-    font-size: 4em;
-    padding: 0px 15px;
-    margin-right: 20px;
-}
-
-#square-edges {
-    margin-bottom: 40%;
-}
-
-#square-edges2 {
-    margin-bottom: 30%;
-}
-
-/* To change color of G icon */
-
-#grammarIcon {
-    background-color: rgb(255, 166, 0);
-}
-
-/* Container holding the four skill buttons */
-
-div#four-categories.uk-button-group.uk-width-expand {
-    /*margin-top: 10%;
-    margin-left: 30%;*/
-    width: 100%;
-}
-
-/* To change color of R icon */
-
-#readicon {
-    background-color: rgb(194, 98, 34);
-}
-
-/* To change color of S icon */
-
-#speakIcon {
-    background-color: rgb(21, 88, 105);
-}
-
-/* To change color of W icon */
-
-#writeIcon {
-    background-color: rgb(121, 170, 74);
-}
-
-/* To change color of L icon */
-
-#listenIcon {
-    background-color: orange;
-}
-
-/*--------------- Bottom Navbar ---------------*/
-
-/* Entire navbar */
-
-#bottom-nav {
-    position: fixed;
-    background-color: white;
-}
-
-/* Icons */
-
-.uk-navbar-nav>li>a {
-    color: gray;
-    height: 5px;
-}
-
-#thing {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-#active-button-thing {
-    color: rgb(14, 109, 126);
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-/* Container around text underneath icons */
-
-.uk-navbar-nav>li {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 0px;
-}
-
-#nav-icons {
-    padding-bottom: 70px;
-    /* background-color: white; */
-}
-
-/* Text underneath icons */
-
-.uk-navbar-nav>li>p {
-    /*padding: 30px;
-    margin: 17px;*/
-    font-size: 30px;
-    line-height: 1.1;
-}
-
-/* Current page's icon */
-
-#active-button {
-    color: rgb(14, 109, 126);
-}
-
-.uk-navbar-container:not(.uk-navbar-transparent) {
-    /* height: 0; */
-}
-
-/*--------------- Reading Page ---------------*/
-
-/* Four orange buttons */
-
-#function-button {
-    margin-top: 15px;
-    background-color: rgb(194, 98, 34);
-    color: white;
-    width: 25%;
-    height: 5%;
-    padding: 0px;
-    font-size: 1.9rem;
-    border-radius: 5px;
-}
-
-/* Level Test Button */
-
-#level-test-button {
-    float: right;
-    width: 25%;
-    height: 5%;
-    font-size: 1.9rem;
-    border-radius: 5px;
-}
-
-/* Divider under function buttons */
-
-.uk-divider-small::after {
-    width: 100%;
-    border-top: 3px solid gray;
-}
-
-/* 'Overall Level Progress' Text */
-
-p {
-    font-size: 30px;
-}
-
-/*--------------- Vocabulary Page ---------------*/
-
-/* 8 practice and test buttons */
-
-#practice-button,
-#test-button {
-    width: 45%;
-    height: 4%;
-    background-color: rgb(41, 185, 178);
-    color: white;
-    font-size: 1.75rem;
-    margin: 10px;
-}
-
-/* Change color of test button */
-
-#test-button {
-    background-color: rgb(72, 136, 43);
-}
-
-/* Container holding all levels */
-
-#vocab-container {
-    /*margin-top: 60%;*/
-    width: 90%;
-    margin-top: 40px;
-}
-
-/* Container holding two buttons */
-
-#level-container {
-    border: solid rgb(182, 181, 181);
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-/*--------------- Goals Page ---------------*/
-
-/* Five buttons */
-
-#goal-button {
-    background-color: rgb(34, 116, 111);
-    color: white;
-    margin-top: 5%;
-    height: 5%;
-    width: 100%;
-    font-size: 250%;
-}
-
-/*--------------- Gathering Page ---------------*/
-
-.uk-card-body {
-    padding: 20px 20px;
-    margin: 15px 50px;
-    width: 90%;
-    height: 30%;
-    border: solid rgba(128, 128, 128, 0.438);
-    border-width: 2px;
-    margin-bottom: 50px;
-}
-
-/*  */
-
-button.uk-button.unit-buttons {
-    border: solid gray;
-    border-radius: 5px;
-    width: 35%;
-    /*max-width: 120px;*/
-    height: 17%;
-    text-transform: none;
-    margin: 5px;
-    padding: 0;
-    line-height: 15px;
-    margin-left: 80px;
-    font-size: 35px;
-}
-
-/*  */
-
-div.uk-grid-small {
-    margin-left: 150px;
-    margin-top: 0px;
-    width: 1630px;
-    float: right;
-}
-
-/*  */
-
-button.uk-button.unit-buttons.button-seven {
-    margin-left: 265px;
-}
-
-/*  */
-
-.uk-card-title {
-    padding: 20px;
-    color: white;
-    text-align: center;
-    font-size: 40px;
-}
-
-/*  */
-
-#unit-one {
-    background-color: rgb(14, 87, 155);
-}
-
-/*  */
-
-#unit-two {
-    background-color: rgb(30, 170, 170);
-}
-
-/*  */
-
-#unit-three {
-    background-color: rgb(122, 167, 70);
-}
-
-/*  */
-
-#unit-four {
-    background-color: rgb(194, 46, 46);
-}
-
-/*  */
-
-#unit-five {
-    background-color: rgb(224, 129, 39);
-}
-
-/*  */
-
-#unit-six {
-    background-color: rgb(228, 156, 24);
-}
-
-/*  */
-
-#unit-seven {
-    background-color: rgb(68, 163, 119);
-}
-
-/* Four accordion buttons */
-
-.uk-accordion-title {
-    background-color: rgb(34, 116, 111);
-    width: 100%;
-    height: 5%;
-    color: white;
-    font-size: 250%;
-    line-height: 1.3;
-}
-
-/* Keeps text color of accordion white */
-
-.uk-accordion-title:hover,
-.uk-accordion-title:focus {
-    color: white;
-}
-
-/* Size of accordion buttons */
-
-.uk-accordion {
-    margin: 20px 40px;
-}
-
-a.uk-accordion-title::after {
-    background-image: none;
-}
-
-/*--------------- Media Query ---------------*/
-
-@media screen and (min-width: 1000px) {
-    ul.uk-subnav.uk-subnav-pill {
-        width: 313px;
-        height: 50px;
-        margin-left: 37%;
-        margin-bottom: 50px;
+@media screen and (max-width: 845px) {
+    html {
+        font-family: "Open Sans" !important;
     }
-    /* Switcher tab */
+    body {
+        height: 100%;
+        min-height: 100%;
+    }
+    /*************** Hidden on mobile view  *******************/
+    #sidenav, #breadcrumb, .desktop, footer {
+        display: none;
+    }
+
+    /*--------------- Top Navbar ---------------*/
+    /* EnglishConnect Text and Subnav under it */
+    .mobile {
+        margin-top: 0;
+    }
+    #first-nav {
+        /* padding: 3px 0; */
+        margin: 0;
+    }
+    .uk-logo {
+        font-size: 18px;
+        font-family: serif;
+    }
+    .uk-logo>span {
+        color: #174C5B;
+    }
+    /* Subnav text */
+    #second-nav {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 100%;
+    }
+    div#second-nav.uk-container {
+        height: 40px;
+        padding: 0;
+    }
+    /* Help button and icon */
+    .uk-navbar-right {
+        position: relative;
+        top: 25px;
+        margin-right: 10px;
+        font-size: 90%;
+    }
+    .uk-divider-small {
+        margin: 0;
+    }
+    .uk-divider-small::after {
+        width: 100%;
+        border-top: 2px solid gray;
+    }
+    /*--------------- Mobile Homepage ---------------*/
+    /* Entire switcher bar */
+    ul.uk-subnav.uk-subnav-pill {
+        display: sticky;
+        width: 100vw;
+        max-width: 400px;
+        min-width: 320px;
+        height: 45px;
+        margin: auto;
+        padding-left: 0;
+        right: 0;
+    }
+    /******************* Switcher tab **********************/
     ul.uk-subnav.uk-subnav-pill>li {
         padding: 0px;
-    }
-    /* Switcher tab text */
-    .uk-subnav-pill>*>:first-child {
-        color: white;
-        line-height: 50px;
-        padding: 0 10px;
-        font-size: 20px;
-    }
-    div#four-categories.uk-button-group.uk-width-expand {
-        margin-left: 34%;
         width: 50%;
+        max-width: 300px;
+        min-width: 160px;
+        height: 40px;
+    }
+    ul.uk-subnav.uk-subnav-pill li>a {
+        min-width: 150px;
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+        height: inherit;
+    }
+    ul.uk-subnav.uk-subnav-pill>li:first-of-type>a {
+        background-color: #174C5B;
+    }
+    ul.uk-subnav.uk-subnav-pill>li:nth-of-type(2)>a {
+        background-color: #6ca9b6;
+    }
+    /* Active switcher tab */
+    .uk-subnav-pill>.uk-active>a {
+        background-color: #006666;
+        height: 22.5px;
+    }
+    #circle {
+        margin: -6vw auto auto -4vw;
+        width: 100vw;
+        max-width: 900px;
+    }
+    #square-edges {
+        margin-bottom: 120px;
+        height: 55px;
+    }
+    #square-edges2 {
+        margin-bottom: 90px;
+    }
+    #bottom-nav>hr {
+        margin-bottom: 5px;
+    }
+    /* Vocab and grammar button groups */
+    button.uk-button {
+        font-size: 1em;
+        margin-right: 5px;
+        height: 25px;
+        line-height: 0px;
+        width: 15%;
+    }
+    /* Circular buttons */
+    #readicon,
+    #speakIcon,
+    #writeIcon,
+    #listenIcon {
+        color: white;
+        filter: brightness(110%);
+        border-radius: 50%;
+        max-height: 60px;
+        min-height: 40px;
+        height: 15vw;
+        width: 15vw;
+        min-width: 40px;
+        max-width: 60px;
+        font-family: serif;
+        font-size: 1.4em;
+        padding: 0px;
+        margin: 0 17px;
+    }
+    #vocabIcon,
+    #grammarIcon {
+        background-color: #299999;
+        color: white;
+        filter: brightness(110%);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        font-family: serif;
+        font-size: 1.4em;
+        padding: 0px;
+        margin-right: 20px;
+    }
+    /* To change color of G icon */
+    #grammarIcon {
+        background-color: rgb(255, 166, 0);
+    }
+    /* Container holding the four skill buttons */
+    div#four-categories.uk-button-group.uk-width-expand {
+        width: 100%;
+        display: none;
+    }
+    /* To change color of R icon */
+    #readicon {
+        background-color: rgb(194, 98, 34);
+    }
+    /* To change color of S icon */
+    #speakIcon {
+        background-color: rgb(21, 88, 105);
+    }
+    /* To change color of W icon */
+    #writeIcon {
+        background-color: rgb(121, 170, 74);
+    }
+    /* To change color of L icon */
+    #listenIcon {
+        background-color: orange;
+    }
+    /*--------------- Bottom Navbar ---------------*/
+    /* Entire navbar */
+    #bottom-nav {
+        position: absolute;
+        bottom: 0;
+    }
+    #bottom-nav>ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        width: 100vw;
+    }
+    /* Container around text underneath icons */
+    #bottom-nav>ul>li {
+        width: 18vw;
+        max-width: 100px;
+        text-align: center;
+        padding: 0;
+    }
+    /* Text underneath icons */
+    #bottom-nav p {
+        margin: 0;
+        font-size: 10px;
+        line-height: 1;
+    }
+    /* Icons */
+    #nav-icons {
+        width: 15vw;
+        height: 15vw;
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    /* Current page's icon */
+    #active-button {
+        color: rgb(14, 109, 126);
     }
 }

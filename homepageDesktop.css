@@ -1,71 +1,134 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 845px) {
+    :root {
+        --sidebar-width: 130px;
+        --desktop-container-width: calc(100vw - var(--sidebar-width));
+    }
     html {
         font-family: "Open Sans" !important;
+        overflow-x: hidden;
+    }
+    .uk-logo {
+        font-size: 90%;
+        font-family: serif;
+    }
+    .uk-logo>span {
+        color: #174C5B;
+    }
+    .mobile,
+    #second-nav {
+        display: none;
     }
     /*--------------- Desktop Home Page ---------------*/
+    #english-connect-3 {
+        left: calc(var(--sidebar-width) * 2 + 30px);
+    }
+    .desktop {
+        display: flex;
+        left: var(--sidebar-width);
+    }
+    .desktop-container {
+        display: flex;
+        flex-flow: row wrap;
+        margin: auto auto auto calc(var(--sidebar-width) + 10px);
+        width: var(--desktop-container-width);
+    }
+    .desktop-container>div {
+        height: 800px;
+        min-width: 600px;
+        max-width: 800px;
+        width: 90vw;
+        margin: auto auto 30px auto;
+    }
+    /************ SVG *************/
+    .reading1 {
+        fill: #ce4929;
+    }
+    img#nav-icons {
+        width: 65px;
+    }
     #desktop-my-progress {
         border: solid rgb(196, 191, 191);
-        margin-left: 10px;
-        margin-right: 100px;
-        height: 700px;
-    }
-    #desktop-my-progress>.uk-card-title {
-        background-color: #086470;
-        color: white;
-        text-transform: uppercase;
     }
     #desktop-todays-goals {
         border: solid rgb(196, 191, 191);
-        margin-left: 10px;
-        margin-right: 100px;
     }
-    #desktop-todays-goals>.uk-card-title {
-        background-color: #086470;
-        color: white;
-        text-transform: uppercase;
+    #vocabIcon-desktop {
+        background-color: #3c8f9c;
+    }
+    #grammarIcon-desktop {
+        background-color: #e7781f;
     }
     #vocabIcon-desktop,
     #grammarIcon-desktop {
-        background-color: #299999;
         color: white;
         filter: brightness(110%);
         border-radius: 50%;
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
         font-family: serif;
         font-size: 1.5em;
-        padding: 0px 5px;
     }
     button.uk-button {
         padding: 0px 30px;
         font-size: .875rem;
         margin-right: 0px;
     }
-    #grammarIcon-desktop {
-        background-color: rgb(255, 166, 0);
+    #desktop-divider {
+        position: absolute;
+        bottom: 200px;
+    }
+    /* hr#desktop-divider.uk-divider-small::after { */
+    /* width: 100%; */
+    /* margin-bottom: 40%; */
+    /* } */
+    div.uk-button-group {
+        /* margin-left: 10px; */
+        width: 100%;
+    }
+    #vocab-grammar-container {
+        width: 60%;
+        margin-bottom: 3%;
+        padding: 0px;
+    }
+    #group1, #group2 {
+        align-items: flex-end;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 10px 0;
     }
     #square-edges {
-        width: 80px;
+        width: 25%;
         height: 35px;
         color: white;
         background-color: rgba(151, 150, 150, 0.781);
     }
-    #desktop-divider.uk-divider-small::after {
-        width: 690px;
-        margin-bottom: 25%;
+    /* #group1 label>div button {
+        background-color: #3c8f9c;
     }
-    #vocab-grammar-container {
-        width: 400px;
-        margin-bottom: 8%;
-        padding: 0px;
+    #group1 label>div button {
+
+    } */
+    label {
+        width: 100%;
+        font-family: sans-serif;
+        padding: 0 10px;
+        font-weight: 700;
+    }
+    #group1 label {
+        color: #3c8f9c;
+    }
+    #group2 label {
+        color: #e7781f;
     }
     #sidenav {
+        position: fixed;
         background-color: rgb(244, 173, 37);
-        margin-left: 0px;
-        width: 90px;
-        margin-right: 50px;
-        padding-left: 0px;
-        height: 130%;
+        margin: 0;
+        width: var(--sidebar-width);
+        padding: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
     #side-nav-box {
         list-style-type: none;
@@ -76,11 +139,13 @@
         border-top: solid white;
     }
     #side-nav-button {
-        padding-top: 15px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-top: 3px;
+        width: var(--sidebar-width);
         text-align: center;
         border-bottom: solid white;
+    }
+    #side-nav-button>p {
+        margin: 0;
     }
     #pathway-logo {
         width: 90%;
@@ -94,7 +159,9 @@
         margin-top: 115px;
     }
     #breadcrumb {
-        margin: 0px 340px;
+        letter-spacing: 2px;
+        font-family: sans-serif;
+        margin: 0px calc(var(--sidebar-width) + 50px);
     }
     .uk-card-body {
         padding: 0px;
@@ -104,29 +171,26 @@
         border-width: 2px;
     }
     div.uk-grid-small {
-        margin-left: 150px;
         margin-top: 0px;
         width: 1630px;
         float: right;
     }
-    .uk-card-title {
-        padding: 20px;
+    #desktop-my-progress>.uk-card-title,
+    #desktop-todays-goals>.uk-card-title {
+        padding: 10px 40px;
         color: white;
-        text-align: center;
+        text-align: left;
+        background-color: #174C5B;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 2em;
     }
     /*--------------- Top Navbar ---------------*/
     .uk-navbar-left {
         margin-left: 5px;
-        /*font-size: 200%;*/
     }
     .uk-logo {
         font-size: 200%;
-    }
-    #second-nav {
-        /* margin-left: 31%;*/
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 125%;
     }
     .uk-navbar-right {
         margin-right: 10px;
@@ -137,11 +201,21 @@
         margin-bottom: 10px;
     }
     #circle {
-        height: 55%;
-        margin-top: 15%;
+        margin-top: -60px;
+        width: 100%;
     }
     #EC3-logo {
         height: 80%;
+    }
+    footer {
+        background-color: #f1eff2;
+        color: black;
+        line-height: 16px;
+        margin-left: var(--sidebar-width);
+        padding-bottom: 3px;
+        position: absolute;
+        text-align: center;
+        width: var(--desktop-container-width);
     }
     /*****************************NEW STUFF**********************************/
     #goal-button {
