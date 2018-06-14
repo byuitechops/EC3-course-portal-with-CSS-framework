@@ -8,7 +8,7 @@
         overflow-x: hidden;
     }
     .uk-logo {
-        font-size: 90%;
+        font-size: 200%;
         font-family: serif;
     }
     .uk-logo>span {
@@ -40,12 +40,6 @@
         margin: auto auto 30px auto;
     }
     /************ SVG *************/
-    .reading1 {
-        fill: #ce4929;
-    }
-    img#nav-icons {
-        width: 65px;
-    }
     #desktop-my-progress {
         border: solid rgb(196, 191, 191);
     }
@@ -77,12 +71,8 @@
         position: absolute;
         bottom: 200px;
     }
-    /* hr#desktop-divider.uk-divider-small::after { */
-    /* width: 100%; */
-    /* margin-bottom: 40%; */
-    /* } */
+    /********** Bottom Vocab/Grammar containers ************/
     div.uk-button-group {
-        /* margin-left: 10px; */
         width: 100%;
     }
     #vocab-grammar-container {
@@ -102,12 +92,6 @@
         color: white;
         background-color: rgba(151, 150, 150, 0.781);
     }
-    /* #group1 label>div button {
-        background-color: #3c8f9c;
-    }
-    #group1 label>div button {
-
-    } */
     label {
         width: 100%;
         font-family: sans-serif;
@@ -120,6 +104,7 @@
     #group2 label {
         color: #e7781f;
     }
+    /***************** Side Navbar ******************/
     #sidenav {
         position: fixed;
         background-color: rgb(244, 173, 37);
@@ -143,6 +128,7 @@
         width: var(--sidebar-width);
         text-align: center;
         border-bottom: solid white;
+        height: 90px;
     }
     #side-nav-button>p {
         margin: 0;
@@ -158,6 +144,11 @@
         width: 130px;
         margin-top: 115px;
     }
+    img#nav-icons {
+        width: 65px;
+        padding: 0;
+    }
+    /*******************************/
     #breadcrumb {
         letter-spacing: 2px;
         font-family: sans-serif;
@@ -188,9 +179,6 @@
     /*--------------- Top Navbar ---------------*/
     .uk-navbar-left {
         margin-left: 5px;
-    }
-    .uk-logo {
-        font-size: 200%;
     }
     .uk-navbar-right {
         margin-right: 10px;

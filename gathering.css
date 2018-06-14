@@ -1,3 +1,7 @@
+:root {
+    --sidebar-width: 130px;
+    --desktop-container-width: calc(100vw - var(--sidebar-width));
+}
 html {
     font-family: "Open Sans" !important;
 }
@@ -10,15 +14,22 @@ body {
 
 /*--------------- Top Navbar ---------------*/
 
-/* EnglishConnect Text and Subnav under it */
-
+/************ Top Bar and Breadcrumbs **************/
+#english-connect-3 {
+    left: calc(var(--sidebar-width) * 2 + 30px);
+}
 .uk-logo {
     font-size: 200%;
+    font-family: serif;
 }
-
-/*div.uk-navbar-center {
-    margin-top: 100px;
-}*/
+.uk-logo>span {
+    color: #174C5B;
+}
+#breadcrumb {
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    margin: 0px calc(var(--sidebar-width) + 50px);
+}
 
 /* Subnav text */
 
@@ -281,29 +292,17 @@ button.uk-button.unit-buttons.button-seven {
         color: white;
         text-align: center;
     }
-    /*  */
+    /********* Side Navbar **********/
     #sidenav {
+        position: fixed;
         background-color: rgb(244, 173, 37);
-        margin-left: 0px;
-        width: 90px;
-        margin-right: 50px;
-        padding-left: 0px;
-        height: 130%;
+        margin: 0;
+        width: var(--sidebar-width);
+        padding: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
-    /*  */
-    #side-nav-button {
-        padding-top: 15px;
-        padding-right: 10px;
-        padding-left: 10px;
-        text-align: center;
-        border-bottom: solid white;
-    }
-    /*  */
-    #pathway-logo {
-        width: 90%;
-        margin-left: 5px;
-    }
-    /*  */
     #side-nav-box {
         list-style-type: none;
         padding: 0px;
@@ -312,15 +311,34 @@ button.uk-button.unit-buttons.button-seven {
         margin-top: 115px;
         border-top: solid white;
     }
-    /*  */
-    #breadcrumb {
-        margin: 0px 340px;
+    #side-nav-button {
+        padding-top: 3px;
+        width: var(--sidebar-width);
+        text-align: center;
+        border-bottom: solid white;
+        height: 90px;
     }
+    #side-nav-button>p {
+        margin: 0;
+    }
+    #pathway-logo {
+        width: 90%;
+        margin-left: 5px;
+    }
+    div.sidenav>ul {
+        list-style-type: none;
+        padding: 0px;
+        background-color: rgb(196, 191, 191);
+        width: 130px;
+        margin-top: 115px;
+    }
+    img#nav-icons {
+        width: 65px;
+        padding: 0;
+    }
+    /*****************************/
     #mobile {
         display: none;
-    }
-    #breadcrumb {
-        margin: 0px 340px;
     }
     h2 {
         margin-left: 200px;
@@ -330,33 +348,6 @@ button.uk-button.unit-buttons.button-seven {
     }
     #bottom-nav {
         display: none;
-    }
-    #sidenav {
-        background-color: rgb(244, 173, 37);
-        margin-left: 0px;
-        width: 90px;
-        margin-right: 50px;
-        padding-left: 0px;
-        height: 130%;
-    }
-    #side-nav-box {
-        list-style-type: none;
-        padding: 0px;
-        background-color: rgb(196, 191, 191);
-        width: 130px;
-        margin-top: 115px;
-        border-top: solid white;
-    }
-    #side-nav-button {
-        padding-top: 0px;
-        padding-right: 10px;
-        padding-left: 10px;
-        text-align: center;
-        border-bottom: solid white;
-    }
-    #pathway-logo {
-        width: 90%;
-        margin-left: 5px;
     }
     div.uk-container {
         margin-left: 17.5%;
