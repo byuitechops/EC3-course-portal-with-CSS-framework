@@ -9,6 +9,13 @@
     font-size: 250%;
 }
 
+@media screen and (max-width: 645px) {
+    #goal-button {
+        font-size: 150%;
+        height: auto;
+    }
+}
+
 @media screen and (min-width: 645px) {
     div.uk-container {
         margin-left: 17.5%;
