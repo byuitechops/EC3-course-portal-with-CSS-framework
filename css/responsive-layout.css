@@ -1,0 +1,187 @@
+html {
+    font-family: "Open Sans" !important;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    --sidebar-width: 130px;
+    --desktop-container-width: calc(100vw - var(--sidebar-width));
+}
+
+/************ Header and Breadcrumbs **************/
+.uk-logo {
+    font-size: 200%;
+    font-family: serif;
+}
+.uk-logo>span {
+    color: #174C5B;
+}
+#breadcrumb {
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    margin: 0px calc(var(--sidebar-width) + 50px);
+}
+#first-nav {
+    margin: 0;
+}
+/* Subnav text */
+#second-nav {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 125%;
+}
+/* Help button and icon */
+.uk-navbar-right {
+    font-family: sans-serif;
+    margin-right: 10px;
+    font-size: 150%;
+}
+/* Navbar Container */
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    height: 5%;
+    margin-bottom: 10px;
+}
+/* Divider under function buttons */
+.uk-divider-small::after {
+    width: 100%;
+    border-top: 3px solid gray;
+}
+
+@media screen and (min-width: 645px) {
+    #second-nav,
+    #bottom-nav {
+        display: none;
+    }
+    #english-connect-3 {
+        left: calc(var(--sidebar-width) + 95px);
+    }
+    #english-connect-3>a {
+        margin-left: var(--sidebar-width);
+    }
+    /***************** Side Navbar ******************/
+    #sidenav {
+        position: fixed;
+        background-color: rgb(244, 173, 37);
+        margin: 0;
+        width: var(--sidebar-width);
+        padding: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    #side-nav-box {
+        list-style-type: none;
+        padding: 0px;
+        background-color: rgb(196, 191, 191);
+        width: 130px;
+        margin-top: 115px;
+        border-top: solid white;
+    }
+    #side-nav-button {
+        padding-top: 3px;
+        width: var(--sidebar-width);
+        text-align: center;
+        border-bottom: solid white;
+        height: 90px;
+    }
+    #side-nav-button>p {
+        margin: 0;
+    }
+    #pathway-logo {
+        width: 90%;
+        margin-left: 5px;
+    }
+    div.sidenav>ul {
+        list-style-type: none;
+        padding: 0px;
+        background-color: rgb(196, 191, 191);
+        width: 130px;
+        margin-top: 115px;
+    }
+    img#nav-icons {
+        width: 65px;
+        padding: 0;
+    }
+    /**************************************************/
+}
+
+@media screen and (max-width: 645px) {
+    #breadcrumb,
+    #sidenav {
+        display: none;
+    }
+    /***************** Header Section ******************/
+    #english-connect-3 {
+        margin: auto;
+    }
+    .uk-logo {
+        font-size: 22px;
+        height: 25px;
+    }
+    div#second-nav a.uk-logo {
+        font-family: sans-serif;
+        padding: 10px;
+    }
+    /* Help Button and Icon */
+    .uk-navbar-right {
+        font-size: 0.9em;
+        font-family: sans-serif;
+        margin-right: 10px;
+        position: relative;
+        top: 48px;
+    }
+    #first-nav {
+        height: 25px;
+    }
+    /******************* Bottom Navbar ******************/
+    #bottom-nav {
+        background-color: white;
+        border-top: 1px solid rgb(207, 207, 207);
+        bottom: 0;
+        margin-top: 15px;
+        padding-top: 7px;
+        position: sticky;
+    }
+    #bottom-nav>ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        width: 100vw;
+    }
+    /* Container around text underneath icons */
+    #bottom-nav>ul>li {
+        width: 18vw;
+        max-width: 100px;
+        text-align: center;
+        padding: 0;
+    }
+    /* Text underneath icons */
+    #bottom-nav p {
+        margin: 0;
+        font-size: 10px;
+        line-height: 1;
+    }
+    /* Icons */
+    #nav-icons {
+        width: 15vw;
+        height: 15vw;
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    /* Current page's icon */
+    #active-button {
+        color: rgb(14, 109, 126);
+    }
+}

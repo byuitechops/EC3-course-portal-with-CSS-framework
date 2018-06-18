@@ -5,8 +5,9 @@
     <title>EC-3 Goals</title>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
-    <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/uikit.min.css" type="text/css">
     <link rel="stylesheet" href="goals.css" type="text/css">
+    <link rel="stylesheet" href="./css/responsive-layout.css" type="text/css">
 </head>
 
 <body>
@@ -20,64 +21,57 @@
             </a>
         </div>
         <div class="uk-navbar-right">
-            <a href="" uk-icon="icon: question; ratio:1">Help</a>
+            <a href="" uk-icon="icon: question; ratio:1">HELP</a>
         </div>
     </nav>
-
-    <!--Breadcrumb-->
-    <p id="breadcrumb">HOME &gt;
-        <b>GOALS</b>
-    </p>
-
-    <!--Side Navbar-->
-    <div class="uk-container uk-position-left" id="sidenav">
-        <ul id="side-nav-box">
-            <!--Pathway logo-->
-            <img class="uk-position-left" src="./images/BYU-PW_Icon_White.png" alt="pathway logo" id="pathway-logo">
-            <br>
-            <!--Home Button Icon-->
-            <li id="side-nav-button">
-                <a href="homepage.html" id="active-button">
-                    <img border="0" alt="home button" src="./images/Home button.png" width="50" height="50">
-                </a>
-                <p>Home</p>
-            </li>
-            <!--Goals Button Icon-->
-            <li id="side-nav-button">
-                <a href="#">
-                    <img border="0" alt="goals button" src="./images/Goals button.png" width="50" height="50">
-                </a>
-                <p>Goals</p>
-            </li>
-            <!--Gathering Button Icon-->
-            <li id="side-nav-button">
-                <a href="gathering.html">
-                    <img border="0" alt="gathering button" src="./images/Gathering button.png" width="50" height="50">
-                </a>
-                <p>Gathering</p>
-            </li>
-            <!--Feedback Button Icon-->
-            <li id="side-nav-button">
-                <a href="feedback.html">
-                    <img border="0" alt="feedback button" src="./images/Feedback button.png" width="50" height="50">
-                </a>
-                <p>Feedback</p>
-            </li>
-            <!--Learning to Learn Button Icon-->
-            <li id="side-nav-button">
-                <a href="learningToLearn.html">
-                    <img border="0" alt="learning to learn button" src="./images/LearntoLearn button.png" width="50" height="50">
-                </a>
-                <p>Learning to Learn</p>
-            </li>
-        </ul>
-    </div>
 
     <!--Page specific part of navbar-->
     <div class="uk-container" id="second-nav">
         <hr class="uk-divider-small">
         <a class="uk-logo" href="">Goals</a>
         <hr class="uk-divider-small">
+    </div>
+
+    <!--Breadcrumb-->
+    <p id="breadcrumb">HOME &gt;
+        <b>GOALS</b>
+    </p>
+
+    <!-- Side Nav -->
+    <div class="uk-container" id="sidenav">
+        <ul id="side-nav-box">
+            <img class="uk-position-left" src="./images/BYU-PW_Icon_White.png" alt="pathway logo" id="pathway-logo">
+            <li id="side-nav-button">
+                <a href="homepage.html">
+                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png">
+                </a>
+                <p>Home</p>
+            </li>
+            <li id="side-nav-button">
+                <a href="#">
+                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png">
+                </a>
+                <p>Goals</p>
+            </li>
+            <li id="side-nav-button">
+                <a href="gathering.html">
+                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png">
+                </a>
+                <p>Gathering</p>
+            </li>
+            <li id="side-nav-button">
+                <a href="feedback.html">
+                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png">
+                </a>
+                <p>Feedback</p>
+            </li>
+            <li id="side-nav-button">
+                <a href="learningToLearn.html">
+                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png">
+                </a>
+                <p>Learning to Learn</p>
+            </li>
+        </ul>
     </div>
 
     <!--Container holding buttons-->
@@ -95,42 +89,43 @@
 
 
     <!--Bottom Navbar-->
-    <nav class="uk-navbar-container uk-position-bottom" id="bottom-nav">
-        <ul class="uk-navbar-nav">
+    <nav id="bottom-nav">
+        <ul>
             <!--Home Button Icon-->
-            <li>
+            <li id="active-button">
                 <a href="homepage.html" id="active-button">
-                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png" width="110" height="100">
+                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png">
                 </a>
                 <p>Home</p>
             </li>
             <!--Goals Button Icon-->
-            <li id="active-button">
+            <li>
                 <a href="#">
-                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png" width="120" height="100">
+                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png">
                 </a>
                 <p>Goals</p>
             </li>
             <!--Gathering Button Icon-->
             <li>
                 <a href="gathering.html">
-                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png" width="110" height="100">
+                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png">
                 </a>
                 <p>Gathering</p>
             </li>
             <!--Feedback Button Icon-->
             <li>
                 <a href="feedback.html">
-                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png" width="120" height="100">
+                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png">
                 </a>
                 <p>Feedback</p>
             </li>
             <!--Learning to Learn Button Icon-->
             <li>
                 <a href="learningToLearn.html">
-                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png" width="130" height="100">
+                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png">
                 </a>
-                <p>Learning to Learn</p>
+                <p>Learning
+                    <br/>to Learn</p>
             </li>
         </ul>
     </nav>

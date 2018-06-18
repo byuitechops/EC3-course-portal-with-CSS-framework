@@ -6,14 +6,15 @@
     <title>EC-3 Home</title>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
-    <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/uikit.min.css" type="text/css">
     <link rel="stylesheet" href="homepage.css" type="text/css">
     <link rel="stylesheet" href="homepageDesktop.css" type="text/css">
+    <link rel="stylesheet" href="./css/responsive-layout.css" type="text/css">
 </head>
 
 <body>
     <!--Top Navbar-->
-    <nav class="uk-navbar-container uk-margin" uk-navbar>
+    <nav class="uk-navbar-container uk-margin" id="first-nav" uk-navbar>
         <div class="uk-navbar-center" id="english-connect-3">
             <a class="uk-navbar-item uk-logo" href="">
                 <span>English</span>
@@ -22,7 +23,7 @@
             </a>
         </div>
         <div class="uk-navbar-right">
-            <a href="" uk-icon="icon: question; ratio:1">Help</a>
+            <a href="" uk-icon="icon: question; ratio:1">HELP</a>
         </div>
     </nav>
 
@@ -53,14 +54,6 @@
 
             <!--Container holding vocab and grammar parts-->
             <div class="uk-container">
-                <!--Four skill buttons-->
-                <div class="uk-button-group uk-width-expand" id="four-categories">
-                    <button class="uk-button-small" id="readIcon" onclick="window.location.href='reading.html'">R</button>
-                    <button class="uk-button-small" id="writeIcon">W</button>
-                    <button class="uk-button-small" id="speakIcon">S</button>
-                    <button class="uk-button-small" id="listenIcon">L</button>
-                </div>
-                <!-- <img class="uk-position-top-center" src="./images/compass.svg" alt="Color Wheel" id="circle"> -->
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
                     id="circle">
@@ -68,39 +61,51 @@
                         .st1 {
                             fill: #BAB9BA;
                         }
+
                         .st3 {
                             font-family: 'OpenSans';
                         }
+
                         .st4 {
                             font-size: 19px;
                         }
+
                         .st5 {
                             fill: white;
                         }
+
                         .st6 {
                             font-size: 27px;
                         }
+
                         .reading {
                             fill: #ce4929;
                         }
+
                         .speaking {
                             fill: #125f81;
                         }
+
                         .writing {
                             fill: #8c9437;
                         }
+
                         .listening {
                             fill: #eba51e;
                         }
+
                         path.reading:hover {
                             opacity: 0.7;
                         }
+
                         path.speaking:hover {
                             opacity: 0.7;
                         }
+
                         path.writing:hover {
                             opacity: 0.7;
                         }
+
                         path.listening:hover {
                             opacity: 0.7;
                         }
@@ -113,71 +118,105 @@
                     <text transform="matrix(1 0 0 1 99.925 132.6592)" class="reading st3 st4">READING</text>
                     <text transform="matrix(1 0 0 1 100.2584 406.5232)" class="speaking st3 st4">SPEAKING</text>
                     <text transform="matrix(1 0 0 1 410.2585 406.5233)" class="listening st3 st4">LISTENING</text>
-                    <a href="reading.html"><g class="reading1">
-                        <path class="reading" d="M214,260.4c0.3-10.4,2.4-20.3,6-29.5l-65.6-27.2c-7,17.6-11,36.7-11.3,56.7H214z" />
-                        <text transform="matrix(1 0 0 1 163.0093 245.7969)" class="st5 st3 st6">1</text>
-                    </g></a>
-                    <a href="#"><g class="reading2">
-                        <path class="reading" d="M222.1,226c4.1-8.9,9.6-17,16.2-24L188,151.8c-13.1,13.6-23.9,29.5-31.6,47L222.1,226z" />
-                        <text transform="matrix(1 0 0 1 185.0835 199.2275)" class="st5 st3 st6">2</text>
-                    </g></a>
-                    <a href="#"><g class="reading3">
-                        <path class="reading" d="M242,198.2c7.2-6.8,15.5-12.4,24.6-16.5l-27.2-65.6c-17.8,7.7-33.9,18.6-47.6,31.9L242,198.2z" />
-                        <text transform="matrix(1 0 0 1 221.3335 164.6543)" class="st5 st3 st6">3</text>
-                    </g></a>
-                    <a href="#"><g class="reading4">
-                        <path class="reading" d="M271.5,179.8c9-3.4,18.7-5.4,28.9-5.7v-71c-19.8,0.3-38.7,4.2-56.1,11.1L271.5,179.8z" />
-                        <text transform="matrix(1 0 0 1 267.7595 143.4043)" class="st5 st3 st6">4</text>
-                    </g></a>
-                    <a href="#"><g class="writing1">
-                        <path class="writing" d="M305.6,174c10.1,0.3,19.9,2.3,28.9,5.7l27.2-65.6c-17.4-6.9-36.3-10.8-56.1-11.1V174z" />
-                        <text transform="matrix(1 0 0 1 321.6759 144.0709)" class="st5 st3 st6">1</text>
-                    </g></a>
-                    <a href="#"><g class="writing2">
-                        <path class="writing" d="M339.4,181.8c9,4,17.2,9.6,24.4,16.2l50.2-50.2c-13.7-13.2-29.7-24-47.4-31.6L339.4,181.8z" />
-                        <text transform="matrix(1 0 0 1 368.8813 163.2275)" class="st5 st3 st6">2</text>
-                    </g></a>
-                    <a href="#"><g class="writing3">
-                        <path class="writing" d="M417.7,151.5l-50.2,50.2c6.9,7.2,12.5,15.6,16.7,24.8l65.6-27.2 C442.1,181.5,431.1,165.3,417.7,151.5z"
-                        />
-                        <text transform="matrix(1 0 0 1 404.3335 197.9965)" class="st5 st3 st6">3</text>
-                    </g></a>
-                    <a href="#"><g class="writing4">
-                        <path class="writing" d="M386.2,231.4c3.4,9,5.4,18.8,5.7,29h71c-0.3-19.8-4.2-38.7-11.1-56.1L386.2,231.4z" />
-                        <text transform="matrix(1 0 0 1 425.4262 244.7968)" class="st5 st3 st6">4</text>
-                    </g></a>
-                    <a href="#"><g class="listening1">
-                        <path class="listening" d="M392,265.6c-0.3,10-2.2,19.5-5.5,28.4l65.6,27.2c6.8-17.3,10.6-36,10.9-55.6H392z" />
-                        <text transform="matrix(1 0 0 1 425.9263 297.9044)" class="st5 st3 st6">1</text>
-                    </g></a>
-                    <a href="#"><g class="listening2">
-                        <path class="listening" d="M384.4,298.9c-4.1,9.3-9.8,17.8-16.7,25.1l50.2,50.2c13.4-13.9,24.3-30.1,32.1-48.1 L384.4,298.9z" />
-                        <text transform="matrix(1 0 0 1 403.8018 344.1899)" class="st5 st3 st6">2</text>
-                    </g></a>
-                    <a href="#"><g class="listening3">
-                        <path class="listening" d="M364,327.8c-7.1,6.7-15.4,12.3-24.5,16.4l27.2,65.6c17.7-7.7,33.8-18.5,47.5-31.8L364,327.8z" />
-                        <text transform="matrix(1 0 0 1 370.0056 380.9044)" class="st5 st3 st6">3</text>
-                    </g></a>
-                    <a href="#"><g class="listening4">
-                        <path class="listening" d="M334.7,346.2c-9.1,3.5-18.8,5.5-29,5.8v71c19.8-0.3,38.8-4.2,56.2-11.1L334.7,346.2z" />
-                        <text transform="matrix(1 0 0 1 320.0095 400.6718)" class="st5 st3 st6">4</text>
-                    </g></a>
-                    <a href="#"><g class="speaking1">
-                        <path class="speaking" d="M300.4,352c-10.2-0.3-20-2.3-29-5.8l-27.2,65.6c17.4,6.9,36.4,10.8,56.2,11.1V352z" />
-                        <text transform="matrix(1 0 0 1 269.2598 400.1543)" class="st5 st3 st6">1</text>
-                    </g></a>
-                    <a href="#"><g class="speaking2">
-                        <path class="speaking" d="M266.4,344.2c-9.2-4.1-17.5-9.8-24.7-16.6l-50.2,50.2c13.8,13.4,29.9,24.3,47.7,32 L266.4,344.2z" />
-                        <text transform="matrix(1 0 0 1 222.3259 380.9042)" class="st5 st3 st6">2</text>
-                    </g></a>
-                    <a href="#"><g class="speaking3">
-                        <path class="speaking" d="M238,323.8c-6.6-7.1-12.1-15.3-16.2-24.3l-65.6,27.2c7.7,17.7,18.4,33.7,31.6,47.3L238,323.8z" />
-                        <text transform="matrix(1 0 0 1 187.1873 346.2658)" class="st5 st3 st6">3</text>
-                    </g></a>
-                    <a href="#"><g class="speaking4">
-                        <path class="speaking" d="M219.8,294.6c-3.4-9-5.4-18.8-5.7-29h-71c0.3,19.8,4.2,38.7,11.1,56.1L219.8,294.6z" />
-                        <text transform="matrix(1 0 0 1 164.0094 297.9043)" class="st5 st3 st6">4</text>
-                    </g></a>
+                    <a href="reading.html">
+                        <g class="reading1">
+                            <path class="reading" d="M214,260.4c0.3-10.4,2.4-20.3,6-29.5l-65.6-27.2c-7,17.6-11,36.7-11.3,56.7H214z" />
+                            <text transform="matrix(1 0 0 1 163.0093 245.7969)" class="st5 st3 st6">1</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="reading2">
+                            <path class="reading" d="M222.1,226c4.1-8.9,9.6-17,16.2-24L188,151.8c-13.1,13.6-23.9,29.5-31.6,47L222.1,226z" />
+                            <text transform="matrix(1 0 0 1 185.0835 199.2275)" class="st5 st3 st6">2</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="reading3">
+                            <path class="reading" d="M242,198.2c7.2-6.8,15.5-12.4,24.6-16.5l-27.2-65.6c-17.8,7.7-33.9,18.6-47.6,31.9L242,198.2z" />
+                            <text transform="matrix(1 0 0 1 221.3335 164.6543)" class="st5 st3 st6">3</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="reading4">
+                            <path class="reading" d="M271.5,179.8c9-3.4,18.7-5.4,28.9-5.7v-71c-19.8,0.3-38.7,4.2-56.1,11.1L271.5,179.8z" />
+                            <text transform="matrix(1 0 0 1 267.7595 143.4043)" class="st5 st3 st6">4</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="writing1">
+                            <path class="writing" d="M305.6,174c10.1,0.3,19.9,2.3,28.9,5.7l27.2-65.6c-17.4-6.9-36.3-10.8-56.1-11.1V174z" />
+                            <text transform="matrix(1 0 0 1 321.6759 144.0709)" class="st5 st3 st6">1</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="writing2">
+                            <path class="writing" d="M339.4,181.8c9,4,17.2,9.6,24.4,16.2l50.2-50.2c-13.7-13.2-29.7-24-47.4-31.6L339.4,181.8z" />
+                            <text transform="matrix(1 0 0 1 368.8813 163.2275)" class="st5 st3 st6">2</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="writing3">
+                            <path class="writing" d="M417.7,151.5l-50.2,50.2c6.9,7.2,12.5,15.6,16.7,24.8l65.6-27.2 C442.1,181.5,431.1,165.3,417.7,151.5z"
+                            />
+                            <text transform="matrix(1 0 0 1 404.3335 197.9965)" class="st5 st3 st6">3</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="writing4">
+                            <path class="writing" d="M386.2,231.4c3.4,9,5.4,18.8,5.7,29h71c-0.3-19.8-4.2-38.7-11.1-56.1L386.2,231.4z" />
+                            <text transform="matrix(1 0 0 1 425.4262 244.7968)" class="st5 st3 st6">4</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="listening1">
+                            <path class="listening" d="M392,265.6c-0.3,10-2.2,19.5-5.5,28.4l65.6,27.2c6.8-17.3,10.6-36,10.9-55.6H392z" />
+                            <text transform="matrix(1 0 0 1 425.9263 297.9044)" class="st5 st3 st6">1</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="listening2">
+                            <path class="listening" d="M384.4,298.9c-4.1,9.3-9.8,17.8-16.7,25.1l50.2,50.2c13.4-13.9,24.3-30.1,32.1-48.1 L384.4,298.9z"
+                            />
+                            <text transform="matrix(1 0 0 1 403.8018 344.1899)" class="st5 st3 st6">2</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="listening3">
+                            <path class="listening" d="M364,327.8c-7.1,6.7-15.4,12.3-24.5,16.4l27.2,65.6c17.7-7.7,33.8-18.5,47.5-31.8L364,327.8z" />
+                            <text transform="matrix(1 0 0 1 370.0056 380.9044)" class="st5 st3 st6">3</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="listening4">
+                            <path class="listening" d="M334.7,346.2c-9.1,3.5-18.8,5.5-29,5.8v71c19.8-0.3,38.8-4.2,56.2-11.1L334.7,346.2z" />
+                            <text transform="matrix(1 0 0 1 320.0095 400.6718)" class="st5 st3 st6">4</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="speaking1">
+                            <path class="speaking" d="M300.4,352c-10.2-0.3-20-2.3-29-5.8l-27.2,65.6c17.4,6.9,36.4,10.8,56.2,11.1V352z" />
+                            <text transform="matrix(1 0 0 1 269.2598 400.1543)" class="st5 st3 st6">1</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="speaking2">
+                            <path class="speaking" d="M266.4,344.2c-9.2-4.1-17.5-9.8-24.7-16.6l-50.2,50.2c13.8,13.4,29.9,24.3,47.7,32 L266.4,344.2z"
+                            />
+                            <text transform="matrix(1 0 0 1 222.3259 380.9042)" class="st5 st3 st6">2</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="speaking3">
+                            <path class="speaking" d="M238,323.8c-6.6-7.1-12.1-15.3-16.2-24.3l-65.6,27.2c7.7,17.7,18.4,33.7,31.6,47.3L238,323.8z" />
+                            <text transform="matrix(1 0 0 1 187.1873 346.2658)" class="st5 st3 st6">3</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="speaking4">
+                            <path class="speaking" d="M219.8,294.6c-3.4-9-5.4-18.8-5.7-29h-71c0.3,19.8,4.2,38.7,11.1,56.1L219.8,294.6z" />
+                            <text transform="matrix(1 0 0 1 164.0094 297.9043)" class="st5 st3 st6">4</text>
+                        </g>
+                    </a>
 
                     <image style="overflow:visible;" width="654" height="654" xlink:href="./images/ECI_Writing.png" transform="matrix(6.891882e-002 0 0 6.891882e-002 439.6801 61.625)"></image>
                     <image style="overflow:visible;" width="654" height="654" xlink:href="./images/ECI_Speaking.png" transform="matrix(6.891882e-002 0 0 6.891882e-002 120.497 419.1927)"></image>
@@ -186,21 +225,31 @@
                 </svg>
 
                 <!--Vocabulary buttons-->
-                <div class="uk-button-group uk-position-bottom-center" id="square-edges">
-                    <button class="uk-button-small" id="vocabIcon" disabled>V</button>
-                    <button class="uk-button" onclick="window.location.href='vocab.html'">1</button>
-                    <button class="uk-button">2</button>
-                    <button class="uk-button">3</button>
-                    <button class="uk-button">4</button>
-                </div>
+                <div class="uk-container" id="vocab-grammar-container">
+                    <div id="group1">
+                        <button class="uk-button-small" id="vocabIcon-desktop" disabled>V</button>
+                        <label>VOCABULARY
+                            <div class="uk-button-group">
+                                <button class="uk-button uk-button-default" id="square-edges">1</button>
+                                <button class="uk-button uk-button-default" id="square-edges">2</button>
+                                <button class="uk-button uk-button-default" id="square-edges">3</button>
+                                <button class="uk-button uk-button-default" id="square-edges">4</button>
+                            </div>
+                        </label>
+                    </div>
 
-                <!--Grammar Buttons-->
-                <div class="uk-button-group uk-position-bottom-center" id="square-edges2">
-                    <button class="uk-button-small" id="grammarIcon" disabled>G</button>
-                    <button class="uk-button">1</button>
-                    <button class="uk-button">2</button>
-                    <button class="uk-button">3</button>
-                    <button class="uk-button">4</button>
+                    <!--Grammar Buttons-->
+                    <div id="group2">
+                        <button class="uk-button-small" id="grammarIcon-desktop" disabled>G</button>
+                        <label>GRAMMAR
+                            <div class="uk-button-group">
+                                <button class="uk-button uk-button-default" id="square-edges">1</button>
+                                <button class="uk-button uk-button-default" id="square-edges">2</button>
+                                <button class="uk-button uk-button-default" id="square-edges">3</button>
+                                <button class="uk-button uk-button-default" id="square-edges">4</button>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </div>
 
@@ -212,7 +261,6 @@
 
         <!--Bottom Navbar-->
         <nav id="bottom-nav">
-            <hr class="uk-divider-small">
             <ul>
                 <!--Home Button Icon-->
                 <li id="active-button">
@@ -301,39 +349,51 @@
                         .st1 {
                             fill: #BAB9BA;
                         }
+
                         .st3 {
                             font-family: 'OpenSans';
                         }
+
                         .st4 {
                             font-size: 19px;
                         }
+
                         .st5 {
                             fill: white;
                         }
+
                         .st6 {
                             font-size: 27px;
                         }
+
                         .reading {
                             fill: #ce4929;
                         }
+
                         .speaking {
                             fill: #125f81;
                         }
+
                         .writing {
                             fill: #8c9437;
                         }
+
                         .listening {
                             fill: #eba51e;
                         }
+
                         path.reading:hover {
                             opacity: 0.7;
                         }
+
                         path.speaking:hover {
                             opacity: 0.7;
                         }
+
                         path.writing:hover {
                             opacity: 0.7;
                         }
+
                         path.listening:hover {
                             opacity: 0.7;
                         }
@@ -346,71 +406,105 @@
                     <text transform="matrix(1 0 0 1 99.925 132.6592)" class="reading st3 st4">READING</text>
                     <text transform="matrix(1 0 0 1 100.2584 406.5232)" class="speaking st3 st4">SPEAKING</text>
                     <text transform="matrix(1 0 0 1 410.2585 406.5233)" class="listening st3 st4">LISTENING</text>
-                    <a href="#"><g class="reading1">
-                        <path class="reading" d="M214,260.4c0.3-10.4,2.4-20.3,6-29.5l-65.6-27.2c-7,17.6-11,36.7-11.3,56.7H214z" />
-                        <text transform="matrix(1 0 0 1 163.0093 245.7969)" class="st5 st3 st6">1</text>
-                    </g></a>
-                    <a href="#"><g class="reading2">
-                        <path class="reading" d="M222.1,226c4.1-8.9,9.6-17,16.2-24L188,151.8c-13.1,13.6-23.9,29.5-31.6,47L222.1,226z" />
-                        <text transform="matrix(1 0 0 1 185.0835 199.2275)" class="st5 st3 st6">2</text>
-                    </g></a>
-                    <a href="#"><g class="reading3">
-                        <path class="reading" d="M242,198.2c7.2-6.8,15.5-12.4,24.6-16.5l-27.2-65.6c-17.8,7.7-33.9,18.6-47.6,31.9L242,198.2z" />
-                        <text transform="matrix(1 0 0 1 221.3335 164.6543)" class="st5 st3 st6">3</text>
-                    </g></a>
-                    <a href="#"><g class="reading4">
-                        <path class="reading" d="M271.5,179.8c9-3.4,18.7-5.4,28.9-5.7v-71c-19.8,0.3-38.7,4.2-56.1,11.1L271.5,179.8z" />
-                        <text transform="matrix(1 0 0 1 267.7595 143.4043)" class="st5 st3 st6">4</text>
-                    </g></a>
-                    <a href="#"><g class="writing1">
-                        <path class="writing" d="M305.6,174c10.1,0.3,19.9,2.3,28.9,5.7l27.2-65.6c-17.4-6.9-36.3-10.8-56.1-11.1V174z" />
-                        <text transform="matrix(1 0 0 1 321.6759 144.0709)" class="st5 st3 st6">1</text>
-                    </g></a>
-                    <a href="#"><g class="writing2">
-                        <path class="writing" d="M339.4,181.8c9,4,17.2,9.6,24.4,16.2l50.2-50.2c-13.7-13.2-29.7-24-47.4-31.6L339.4,181.8z" />
-                        <text transform="matrix(1 0 0 1 368.8813 163.2275)" class="st5 st3 st6">2</text>
-                    </g></a>
-                    <a href="#"><g class="writing3">
-                        <path class="writing" d="M417.7,151.5l-50.2,50.2c6.9,7.2,12.5,15.6,16.7,24.8l65.6-27.2 C442.1,181.5,431.1,165.3,417.7,151.5z"
-                        />
-                        <text transform="matrix(1 0 0 1 404.3335 197.9965)" class="st5 st3 st6">3</text>
-                    </g></a>
-                    <a href="#"><g class="writing4">
-                        <path class="writing" d="M386.2,231.4c3.4,9,5.4,18.8,5.7,29h71c-0.3-19.8-4.2-38.7-11.1-56.1L386.2,231.4z" />
-                        <text transform="matrix(1 0 0 1 425.4262 244.7968)" class="st5 st3 st6">4</text>
-                    </g></a>
-                    <a href="#"><g class="listening1">
-                        <path class="listening" d="M392,265.6c-0.3,10-2.2,19.5-5.5,28.4l65.6,27.2c6.8-17.3,10.6-36,10.9-55.6H392z" />
-                        <text transform="matrix(1 0 0 1 425.9263 297.9044)" class="st5 st3 st6">1</text>
-                    </g></a>
-                    <a href="#"><g class="listening2">
-                        <path class="listening" d="M384.4,298.9c-4.1,9.3-9.8,17.8-16.7,25.1l50.2,50.2c13.4-13.9,24.3-30.1,32.1-48.1 L384.4,298.9z" />
-                        <text transform="matrix(1 0 0 1 403.8018 344.1899)" class="st5 st3 st6">2</text>
-                    </g></a>
-                    <a href="#"><g class="listening3">
-                        <path class="listening" d="M364,327.8c-7.1,6.7-15.4,12.3-24.5,16.4l27.2,65.6c17.7-7.7,33.8-18.5,47.5-31.8L364,327.8z" />
-                        <text transform="matrix(1 0 0 1 370.0056 380.9044)" class="st5 st3 st6">3</text>
-                    </g></a>
-                    <a href="#"><g class="listening4">
-                        <path class="listening" d="M334.7,346.2c-9.1,3.5-18.8,5.5-29,5.8v71c19.8-0.3,38.8-4.2,56.2-11.1L334.7,346.2z" />
-                        <text transform="matrix(1 0 0 1 320.0095 400.6718)" class="st5 st3 st6">4</text>
-                    </g></a>
-                    <a href="#"><g class="speaking1">
-                        <path class="speaking" d="M300.4,352c-10.2-0.3-20-2.3-29-5.8l-27.2,65.6c17.4,6.9,36.4,10.8,56.2,11.1V352z" />
-                        <text transform="matrix(1 0 0 1 269.2598 400.1543)" class="st5 st3 st6">1</text>
-                    </g></a>
-                    <a href="#"><g class="speaking2">
-                        <path class="speaking" d="M266.4,344.2c-9.2-4.1-17.5-9.8-24.7-16.6l-50.2,50.2c13.8,13.4,29.9,24.3,47.7,32 L266.4,344.2z" />
-                        <text transform="matrix(1 0 0 1 222.3259 380.9042)" class="st5 st3 st6">2</text>
-                    </g></a>
-                    <a href="#"><g class="speaking3">
-                        <path class="speaking" d="M238,323.8c-6.6-7.1-12.1-15.3-16.2-24.3l-65.6,27.2c7.7,17.7,18.4,33.7,31.6,47.3L238,323.8z" />
-                        <text transform="matrix(1 0 0 1 187.1873 346.2658)" class="st5 st3 st6">3</text>
-                    </g></a>
-                    <a href="#"><g class="speaking4">
-                        <path class="speaking" d="M219.8,294.6c-3.4-9-5.4-18.8-5.7-29h-71c0.3,19.8,4.2,38.7,11.1,56.1L219.8,294.6z" />
-                        <text transform="matrix(1 0 0 1 164.0094 297.9043)" class="st5 st3 st6">4</text>
-                    </g></a>
+                    <a href="#">
+                        <g class="reading1">
+                            <path class="reading" d="M214,260.4c0.3-10.4,2.4-20.3,6-29.5l-65.6-27.2c-7,17.6-11,36.7-11.3,56.7H214z" />
+                            <text transform="matrix(1 0 0 1 163.0093 245.7969)" class="st5 st3 st6">1</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="reading2">
+                            <path class="reading" d="M222.1,226c4.1-8.9,9.6-17,16.2-24L188,151.8c-13.1,13.6-23.9,29.5-31.6,47L222.1,226z" />
+                            <text transform="matrix(1 0 0 1 185.0835 199.2275)" class="st5 st3 st6">2</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="reading3">
+                            <path class="reading" d="M242,198.2c7.2-6.8,15.5-12.4,24.6-16.5l-27.2-65.6c-17.8,7.7-33.9,18.6-47.6,31.9L242,198.2z" />
+                            <text transform="matrix(1 0 0 1 221.3335 164.6543)" class="st5 st3 st6">3</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="reading4">
+                            <path class="reading" d="M271.5,179.8c9-3.4,18.7-5.4,28.9-5.7v-71c-19.8,0.3-38.7,4.2-56.1,11.1L271.5,179.8z" />
+                            <text transform="matrix(1 0 0 1 267.7595 143.4043)" class="st5 st3 st6">4</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="writing1">
+                            <path class="writing" d="M305.6,174c10.1,0.3,19.9,2.3,28.9,5.7l27.2-65.6c-17.4-6.9-36.3-10.8-56.1-11.1V174z" />
+                            <text transform="matrix(1 0 0 1 321.6759 144.0709)" class="st5 st3 st6">1</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="writing2">
+                            <path class="writing" d="M339.4,181.8c9,4,17.2,9.6,24.4,16.2l50.2-50.2c-13.7-13.2-29.7-24-47.4-31.6L339.4,181.8z" />
+                            <text transform="matrix(1 0 0 1 368.8813 163.2275)" class="st5 st3 st6">2</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="writing3">
+                            <path class="writing" d="M417.7,151.5l-50.2,50.2c6.9,7.2,12.5,15.6,16.7,24.8l65.6-27.2 C442.1,181.5,431.1,165.3,417.7,151.5z"
+                            />
+                            <text transform="matrix(1 0 0 1 404.3335 197.9965)" class="st5 st3 st6">3</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="writing4">
+                            <path class="writing" d="M386.2,231.4c3.4,9,5.4,18.8,5.7,29h71c-0.3-19.8-4.2-38.7-11.1-56.1L386.2,231.4z" />
+                            <text transform="matrix(1 0 0 1 425.4262 244.7968)" class="st5 st3 st6">4</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="listening1">
+                            <path class="listening" d="M392,265.6c-0.3,10-2.2,19.5-5.5,28.4l65.6,27.2c6.8-17.3,10.6-36,10.9-55.6H392z" />
+                            <text transform="matrix(1 0 0 1 425.9263 297.9044)" class="st5 st3 st6">1</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="listening2">
+                            <path class="listening" d="M384.4,298.9c-4.1,9.3-9.8,17.8-16.7,25.1l50.2,50.2c13.4-13.9,24.3-30.1,32.1-48.1 L384.4,298.9z"
+                            />
+                            <text transform="matrix(1 0 0 1 403.8018 344.1899)" class="st5 st3 st6">2</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="listening3">
+                            <path class="listening" d="M364,327.8c-7.1,6.7-15.4,12.3-24.5,16.4l27.2,65.6c17.7-7.7,33.8-18.5,47.5-31.8L364,327.8z" />
+                            <text transform="matrix(1 0 0 1 370.0056 380.9044)" class="st5 st3 st6">3</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="listening4">
+                            <path class="listening" d="M334.7,346.2c-9.1,3.5-18.8,5.5-29,5.8v71c19.8-0.3,38.8-4.2,56.2-11.1L334.7,346.2z" />
+                            <text transform="matrix(1 0 0 1 320.0095 400.6718)" class="st5 st3 st6">4</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="speaking1">
+                            <path class="speaking" d="M300.4,352c-10.2-0.3-20-2.3-29-5.8l-27.2,65.6c17.4,6.9,36.4,10.8,56.2,11.1V352z" />
+                            <text transform="matrix(1 0 0 1 269.2598 400.1543)" class="st5 st3 st6">1</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="speaking2">
+                            <path class="speaking" d="M266.4,344.2c-9.2-4.1-17.5-9.8-24.7-16.6l-50.2,50.2c13.8,13.4,29.9,24.3,47.7,32 L266.4,344.2z"
+                            />
+                            <text transform="matrix(1 0 0 1 222.3259 380.9042)" class="st5 st3 st6">2</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="speaking3">
+                            <path class="speaking" d="M238,323.8c-6.6-7.1-12.1-15.3-16.2-24.3l-65.6,27.2c7.7,17.7,18.4,33.7,31.6,47.3L238,323.8z" />
+                            <text transform="matrix(1 0 0 1 187.1873 346.2658)" class="st5 st3 st6">3</text>
+                        </g>
+                    </a>
+                    <a href="#">
+                        <g class="speaking4">
+                            <path class="speaking" d="M219.8,294.6c-3.4-9-5.4-18.8-5.7-29h-71c0.3,19.8,4.2,38.7,11.1,56.1L219.8,294.6z" />
+                            <text transform="matrix(1 0 0 1 164.0094 297.9043)" class="st5 st3 st6">4</text>
+                        </g>
+                    </a>
 
                     <image style="overflow:visible;" width="654" height="654" xlink:href="./images/ECI_Writing.png" transform="matrix(6.891882e-002 0 0 6.891882e-002 439.6801 61.625)"></image>
                     <image style="overflow:visible;" width="654" height="654" xlink:href="./images/ECI_Speaking.png" transform="matrix(6.891882e-002 0 0 6.891882e-002 120.497 419.1927)"></image>
@@ -423,13 +517,13 @@
                     <div id="group1">
                         <button class="uk-button-small" id="vocabIcon-desktop" disabled>V</button>
                         <label>VOCABULARY
-                        <div class="uk-button-group">
-                            <button class="uk-button uk-button-default" id="square-edges">1</button>
-                            <button class="uk-button uk-button-default" id="square-edges">2</button>
-                            <button class="uk-button uk-button-default" id="square-edges">3</button>
-                            <button class="uk-button uk-button-default" id="square-edges">4</button>
-                        </div>
-                    </label>
+                            <div class="uk-button-group">
+                                <button class="uk-button uk-button-default" id="square-edges">1</button>
+                                <button class="uk-button uk-button-default" id="square-edges">2</button>
+                                <button class="uk-button uk-button-default" id="square-edges">3</button>
+                                <button class="uk-button uk-button-default" id="square-edges">4</button>
+                            </div>
+                        </label>
                     </div>
                     <!-- <br> -->
                     <!-- <br> -->
@@ -437,13 +531,13 @@
                     <div id="group2">
                         <button class="uk-button-small" id="grammarIcon-desktop" disabled>G</button>
                         <label>GRAMMAR
-                        <div class="uk-button-group">
-                            <button class="uk-button uk-button-default" id="square-edges">1</button>
-                            <button class="uk-button uk-button-default" id="square-edges">2</button>
-                            <button class="uk-button uk-button-default" id="square-edges">3</button>
-                            <button class="uk-button uk-button-default" id="square-edges">4</button>
-                        </div>
-                    </label>
+                            <div class="uk-button-group">
+                                <button class="uk-button uk-button-default" id="square-edges">1</button>
+                                <button class="uk-button uk-button-default" id="square-edges">2</button>
+                                <button class="uk-button uk-button-default" id="square-edges">3</button>
+                                <button class="uk-button uk-button-default" id="square-edges">4</button>
+                            </div>
+                        </label>
                     </div>
                 </div>
             </div>

@@ -1,27 +1,9 @@
-@media screen and (min-width: 845px) {
-    :root {
-        --sidebar-width: 130px;
-        --desktop-container-width: calc(100vw - var(--sidebar-width));
-    }
-    html {
-        font-family: "Open Sans" !important;
-        overflow-x: hidden;
-    }
-    .uk-logo {
-        font-size: 200%;
-        font-family: serif;
-    }
-    .uk-logo>span {
-        color: #174C5B;
-    }
+@media screen and (min-width: 645px) {
     .mobile,
     #second-nav {
         display: none;
     }
     /*--------------- Desktop Home Page ---------------*/
-    #english-connect-3 {
-        left: calc(var(--sidebar-width) * 2 + 30px);
-    }
     .desktop {
         display: flex;
         left: var(--sidebar-width);
@@ -52,6 +34,11 @@
     #grammarIcon-desktop {
         background-color: #e7781f;
     }
+    #desktop-divider {
+        position: absolute;
+        bottom: 200px;
+    }
+    /********** Bottom Vocab/Grammar containers ************/
     #vocabIcon-desktop,
     #grammarIcon-desktop {
         color: white;
@@ -67,11 +54,6 @@
         font-size: .875rem;
         margin-right: 0px;
     }
-    #desktop-divider {
-        position: absolute;
-        bottom: 200px;
-    }
-    /********** Bottom Vocab/Grammar containers ************/
     div.uk-button-group {
         width: 100%;
     }
@@ -104,56 +86,6 @@
     #group2 label {
         color: #e7781f;
     }
-    /***************** Side Navbar ******************/
-    #sidenav {
-        position: fixed;
-        background-color: rgb(244, 173, 37);
-        margin: 0;
-        width: var(--sidebar-width);
-        padding: 0;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
-    #side-nav-box {
-        list-style-type: none;
-        padding: 0px;
-        background-color: rgb(196, 191, 191);
-        width: 130px;
-        margin-top: 115px;
-        border-top: solid white;
-    }
-    #side-nav-button {
-        padding-top: 3px;
-        width: var(--sidebar-width);
-        text-align: center;
-        border-bottom: solid white;
-        height: 90px;
-    }
-    #side-nav-button>p {
-        margin: 0;
-    }
-    #pathway-logo {
-        width: 90%;
-        margin-left: 5px;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0px;
-        background-color: rgb(196, 191, 191);
-        width: 130px;
-        margin-top: 115px;
-    }
-    img#nav-icons {
-        width: 65px;
-        padding: 0;
-    }
-    /*******************************/
-    #breadcrumb {
-        letter-spacing: 2px;
-        font-family: sans-serif;
-        margin: 0px calc(var(--sidebar-width) + 50px);
-    }
     .uk-card-body {
         padding: 0px;
         margin: 15px 50px;
@@ -181,6 +113,7 @@
         margin-left: 5px;
     }
     .uk-navbar-right {
+        font-family: sans-serif;
         margin-right: 10px;
         font-size: 150%;
     }
@@ -189,7 +122,7 @@
         margin-bottom: 10px;
     }
     #circle {
-        margin-top: -60px;
+        margin-top: -55px;
         width: 100%;
     }
     #EC3-logo {

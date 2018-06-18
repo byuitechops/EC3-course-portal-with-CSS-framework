@@ -1,138 +1,11 @@
-:root {
-    --sidebar-width: 130px;
-    --desktop-container-width: calc(100vw - var(--sidebar-width));
-}
-html {
-    font-family: "Open Sans" !important;
-}
-
-body {
-    height: 100%;
-    min-height: 100%;
-    /*overflow-y: hidden;*/
-}
-
-/*--------------- Top Navbar ---------------*/
-
-/************ Top Bar and Breadcrumbs **************/
-#english-connect-3 {
-    left: calc(var(--sidebar-width) * 2 + 30px);
-}
-.uk-logo {
-    font-size: 200%;
-    font-family: serif;
-}
-.uk-logo>span {
-    color: #174C5B;
-}
-#breadcrumb {
-    letter-spacing: 2px;
-    font-family: sans-serif;
-    margin: 0px calc(var(--sidebar-width) + 50px);
-}
-
-/* Subnav text */
-
-#second-nav {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 125%;
-}
-
-/* Help button and icon */
-
-.uk-navbar-right {
-    margin-right: 10px;
-    font-size: 150%;
-}
-
-/* Navbar Container */
-
-.uk-navbar-container:not(.uk-navbar-transparent) {
-    height: 5%;
-    margin-bottom: 10px;
-}
-
-/*--------------- Bottom Navbar ---------------*/
-
-/* Entire navbar */
-
-#bottom-nav {
-    position: fixed;
-    background-color: white;
-}
-
-/* Icons */
-
-.uk-navbar-nav>li>a {
-    color: gray;
-    height: 5px;
-}
-
-#thing {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-#active-button-thing {
-    color: rgb(14, 109, 126);
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-/* Container around text underneath icons */
-
-.uk-navbar-nav>li {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 0px;
-}
-
-#nav-icons {
-    padding-bottom: 70px;
-    /* background-color: white; */
-}
-
-/* Text underneath icons */
-
-.uk-navbar-nav>li>p {
-    /*padding: 30px;
-    margin: 17px;*/
-    font-size: 30px;
-    line-height: 1.1;
-}
-
-/* Five buttons */
-
-#goal-button {
-    background-color: rgb(34, 116, 111);
-    color: white;
-    margin-top: 5%;
-    height: 5%;
-    width: 100%;
-    font-size: 250%;
-}
-
-/* Current page's icon */
-
-#active-button {
-    color: rgb(14, 109, 126);
-}
-
-/* Divider under function buttons */
-
-.uk-divider-small::after {
-    width: 100%;
-    border-top: 3px solid gray;
-}
-
 .uk-card-body {
-    padding: 10px 10px;
-    width: 90%;
-    height: 30%;
     border: solid rgba(128, 128, 128, 0.438);
     border-width: 2px;
     margin-bottom: 50px;
+    padding: 0px;
+    width: 340px;
+    /* min-width: 340px; */
+    height: auto;
 }
 
 /*  */
@@ -142,9 +15,9 @@ button.uk-button.unit-buttons {
     border-radius: 5px;
     width: 35%;
     /*max-width: 120px;*/
-    height: 17%;
+    height: 60px;
     text-transform: none;
-    margin: 5px;
+    /* margin: 5px; */
     padding: 0;
     line-height: 15px;
     margin-left: 80px;
@@ -169,6 +42,8 @@ button.uk-button.unit-buttons.button-seven {
 /*  */
 
 .uk-card-title {
+    position: relative;
+    width: auto;
     padding: 20px;
     color: white;
     text-align: center;
@@ -219,17 +94,31 @@ button.uk-button.unit-buttons.button-seven {
 
 /* Four accordion buttons */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 645px) {
     .uk-flex {
         flex-wrap: wrap;
-        width: 90%;
-        margin-left: 14.1%;
+        max-width: 100%;
+        padding: 0 100px;
+        justify-content: space-between;
+        /* margin: auto; */
+        /* margin-left: 130px; The width of the sidebar */
+    }
+    .desktop-wrapper {
+        margin-left: 130px;
+    }
+    /* Size of accordion buttons */
+    .uk-accordion {
+        max-width: 100%;
+        margin: 10px 100px;
+    }
+    .desktop-wrapper ul.uk-accordion>li {
+        width: 100%;
+        margin: 20px 0;
     }
     /* Four accordion buttons */
     .uk-accordion-title {
         background-color: rgb(34, 116, 111);
-        width: 66.8%;
-        margin-left: 15.5%;
+        max-width: 100%;
         height: 5%;
         color: white;
         font-size: 150%;
@@ -240,10 +129,6 @@ button.uk-button.unit-buttons.button-seven {
     .uk-accordion-title:focus {
         color: white;
     }
-    /* Size of accordion buttons */
-    .uk-accordion {
-        margin: 20px 40px;
-    }
     div.uk-accordion-content>p {
         margin-left: 15.5%;
     }
@@ -251,15 +136,6 @@ button.uk-button.unit-buttons.button-seven {
         background-image: none;
     }
     /*--------------- Desktop Gathering Page ---------------*/
-    /*  */
-    .uk-card-body {
-        padding: 0px;
-        margin: 15px 50px;
-        width: 340px;
-        border: solid rgba(128, 128, 128, 0.246);
-        border-width: 2px;
-        height: 280px;
-    }
     /*  */
     button.uk-button.unit-buttons {
         border: solid gray;
@@ -277,8 +153,6 @@ button.uk-button.unit-buttons.button-seven {
     /*  */
     div.uk-grid-small {
         margin-left: 150px;
-        /* margin-top: 0px; */
-        /* width: 1630px; */
         float: right;
     }
     /*  */
@@ -287,66 +161,9 @@ button.uk-button.unit-buttons.button-seven {
         max-width: 102px;
     }
     /*  */
-    .uk-card-title {
-        padding: 20px;
-        color: white;
-        text-align: center;
-    }
-    /********* Side Navbar **********/
-    #sidenav {
-        position: fixed;
-        background-color: rgb(244, 173, 37);
-        margin: 0;
-        width: var(--sidebar-width);
-        padding: 0;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
-    #side-nav-box {
-        list-style-type: none;
-        padding: 0px;
-        background-color: rgb(196, 191, 191);
-        width: 130px;
-        margin-top: 115px;
-        border-top: solid white;
-    }
-    #side-nav-button {
-        padding-top: 3px;
-        width: var(--sidebar-width);
-        text-align: center;
-        border-bottom: solid white;
-        height: 90px;
-    }
-    #side-nav-button>p {
-        margin: 0;
-    }
-    #pathway-logo {
-        width: 90%;
-        margin-left: 5px;
-    }
-    div.sidenav>ul {
-        list-style-type: none;
-        padding: 0px;
-        background-color: rgb(196, 191, 191);
-        width: 130px;
-        margin-top: 115px;
-    }
-    img#nav-icons {
-        width: 65px;
-        padding: 0;
-    }
-    /*****************************/
-    #mobile {
-        display: none;
-    }
-    h2 {
-        margin-left: 200px;
-    }
+    #mobile,
+    #bottom-nav,
     #second-nav {
-        display: none;
-    }
-    #bottom-nav {
         display: none;
     }
     div.uk-container {
@@ -354,22 +171,30 @@ button.uk-button.unit-buttons.button-seven {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .uk-flex {
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 645px) {
     #desktop {
         display: none;
     }
-    #breadcrumb {
-        display: none;
+    .uk-flex {
+        margin: 20px;
+        flex-wrap: wrap;
     }
-    #sidenav {
-        display: none;
+    .uk-card-body {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .uk-card-title {
+        width: 100%;
+    }
+    button.uk-button.unit-buttons {
+        margin: 5px 10px;
+        min-width: 140px;
     }
     .uk-accordion-title {
         background-color: rgb(34, 116, 111);
-        width: 100%;
+        width: auto;
         height: 5%;
         color: white;
         font-size: 250%;
@@ -383,12 +208,16 @@ button.uk-button.unit-buttons.button-seven {
     /* Size of accordion buttons */
     .uk-accordion {
         margin: 10px 20px;
-        /* width: 90%; */
     }
     a.uk-accordion-title::after {
         background-image: none;
     }
     .uk-navbar-container:not(.uk-navbar-transparent) {
         background: none;
+    }
+    #mobile {
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
     }
 }

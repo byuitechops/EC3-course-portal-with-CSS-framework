@@ -1,57 +1,13 @@
-@media screen and (max-width: 845px) {
-    html {
-        font-family: "Open Sans" !important;
-    }
-    body {
-        height: 100%;
-        min-height: 100%;
-    }
+@media screen and (max-width: 645px) {
     /*************** Hidden on mobile view  *******************/
-    #sidenav, #breadcrumb, .desktop, footer {
+    .desktop,
+    footer {
         display: none;
     }
-
-    /*--------------- Top Navbar ---------------*/
     /* EnglishConnect Text and Subnav under it */
     .mobile {
-        margin-top: 0;
+        margin-top: 20px;
     }
-    #first-nav {
-        /* padding: 3px 0; */
-        margin: 0;
-    }
-    .uk-logo {
-        font-size: 18px;
-        font-family: serif;
-    }
-    .uk-logo>span {
-        color: #174C5B;
-    }
-    /* Subnav text */
-    #second-nav {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 100%;
-    }
-    div#second-nav.uk-container {
-        height: 40px;
-        padding: 0;
-    }
-    /* Help button and icon */
-    .uk-navbar-right {
-        position: relative;
-        top: 25px;
-        margin-right: 10px;
-        font-size: 90%;
-    }
-    .uk-divider-small {
-        margin: 0;
-    }
-    .uk-divider-small::after {
-        width: 100%;
-        border-top: 2px solid gray;
-    }
-    /*--------------- Mobile Homepage ---------------*/
     /* Entire switcher bar */
     ul.uk-subnav.uk-subnav-pill {
         display: sticky;
@@ -90,47 +46,76 @@
         height: 22.5px;
     }
     #circle {
-        margin: -6vw auto auto -4vw;
+        margin: -6vw auto auto -2vw;
         width: 100vw;
-        max-width: 900px;
+        max-width: 630px;
     }
-    #square-edges {
-        margin-bottom: 120px;
-        height: 55px;
+    /************ SVG *************/
+    #desktop-my-progress {
+        border: solid rgb(196, 191, 191);
     }
-    #square-edges2 {
-        margin-bottom: 90px;
+    #desktop-todays-goals {
+        border: solid rgb(196, 191, 191);
     }
-    #bottom-nav>hr {
-        margin-bottom: 5px;
+    #vocabIcon-desktop {
+        background-color: #3c8f9c;
     }
-    /* Vocab and grammar button groups */
-    button.uk-button {
-        font-size: 1em;
-        margin-right: 5px;
-        height: 25px;
-        line-height: 0px;
-        width: 15%;
+    #grammarIcon-desktop {
+        background-color: #e7781f;
     }
-    /* Circular buttons */
-    #readicon,
-    #speakIcon,
-    #writeIcon,
-    #listenIcon {
+    /********** Bottom Vocab/Grammar containers ************/
+    #vocabIcon-desktop,
+    #grammarIcon-desktop {
         color: white;
         filter: brightness(110%);
         border-radius: 50%;
-        max-height: 60px;
-        min-height: 40px;
-        height: 15vw;
-        width: 15vw;
-        min-width: 40px;
-        max-width: 60px;
+        height: 50px;
+        width: 50px;
         font-family: serif;
-        font-size: 1.4em;
-        padding: 0px;
-        margin: 0 17px;
+        font-size: 1.5em;
     }
+    div.uk-button-group {
+        width: 100%;
+    }
+    #vocab-grammar-container {
+        position: sticky;
+        bottom: 90px;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+    #group1,
+    #group2 {
+        align-items: flex-end;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 10px 0;
+        max-width: 100%;
+    }
+    #square-edges {
+        color: white;
+        background-color: rgba(151, 150, 150, 0.781);
+        height: 23px;
+        line-height: 23px;
+        font-size: .75em;
+        margin-right: 0px;
+        padding: 0px 25px;
+        width: 25%;
+    }
+    label {
+        width: 100%;
+        font-family: sans-serif;
+        padding: 0 10px;
+        font-weight: 700;
+    }
+    #group1 label {
+        color: #3c8f9c;
+    }
+    #group2 label {
+        color: #e7781f;
+    }
+    /* Circular buttons */
     #vocabIcon,
     #grammarIcon {
         background-color: #299999;
@@ -148,30 +133,11 @@
     #grammarIcon {
         background-color: rgb(255, 166, 0);
     }
-    /* Container holding the four skill buttons */
-    div#four-categories.uk-button-group.uk-width-expand {
-        width: 100%;
-        display: none;
-    }
-    /* To change color of R icon */
-    #readicon {
-        background-color: rgb(194, 98, 34);
-    }
-    /* To change color of S icon */
-    #speakIcon {
-        background-color: rgb(21, 88, 105);
-    }
-    /* To change color of W icon */
-    #writeIcon {
-        background-color: rgb(121, 170, 74);
-    }
-    /* To change color of L icon */
-    #listenIcon {
-        background-color: orange;
-    }
     /*--------------- Bottom Navbar ---------------*/
     /* Entire navbar */
     #bottom-nav {
+        border-top: 1px solid rgb(207, 207, 207);
+        padding-top: 7px;
         position: absolute;
         bottom: 0;
     }
