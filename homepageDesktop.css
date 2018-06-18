@@ -131,10 +131,12 @@
     footer {
         background-color: #f1eff2;
         color: black;
-        line-height: 16px;
+        line-height: 25px;
         margin-left: var(--sidebar-width);
         padding-bottom: 3px;
-        position: absolute;
+        margin-bottom: 0;
+        bottom: 0;
+        position: static;
         text-align: center;
         width: var(--desktop-container-width);
     }
