@@ -53,19 +53,6 @@ body {
     width: 100%;
     border-top: 3px solid gray;
 }
-/************ Accordion Used on Multiple Pages *************/
-.uk-accordion {
-    
-}
-a.uk-accordion-title::after {
-    color: white;
-}
-li.uk-open {
-    background-color: pink;
-}
-a.uk-accordion-title:active {
-    background-color: magenta;
-}
 
 @media screen and (min-width: 645px) {
     #second-nav,
