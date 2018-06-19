@@ -16,39 +16,51 @@ body {
 }
 
 /************ Header and Breadcrumbs **************/
+
 .uk-logo {
     font-size: 200%;
     font-family: serif;
 }
+
 .uk-logo>span {
     color: #174C5B;
 }
+
 #breadcrumb {
     letter-spacing: 2px;
     font-family: sans-serif;
     margin: 0px calc(var(--sidebar-width) + 50px);
 }
+
 #first-nav {
     margin: 0;
 }
+
 /* Subnav text */
+
 #second-nav {
     text-transform: uppercase;
     text-align: center;
     font-size: 125%;
 }
+
 /* Help button and icon */
+
 .uk-navbar-right {
     font-family: sans-serif;
     margin-right: 10px;
     font-size: 150%;
 }
+
 /* Navbar Container */
+
 .uk-navbar-container:not(.uk-navbar-transparent) {
     height: 5%;
     margin-bottom: 10px;
 }
+
 /* Divider under function buttons */
+
 .uk-divider-small::after {
     width: 100%;
     border-top: 3px solid gray;
@@ -68,7 +80,7 @@ body {
     /***************** Side Navbar ******************/
     #sidenav {
         position: fixed;
-        background-color: rgb(244, 173, 37);
+        background-color: rgb(251, 193, 22);
         margin: 0;
         width: var(--sidebar-width);
         padding: 0;
