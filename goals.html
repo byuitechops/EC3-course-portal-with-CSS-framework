@@ -7,6 +7,7 @@
     <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="./css/uikit.min.css" type="text/css">
     <link rel="stylesheet" href="goals.css" type="text/css">
+    <link rel="stylesheet" href="./css/accordion.css" type="text/css">
     <link rel="stylesheet" href="./css/responsive-layout.css" type="text/css">
 </head>
 
@@ -73,17 +74,52 @@
         </ul>
     </div>
 
-    <!--Container holding buttons-->
-    <div class="uk-container">
-        <button class="uk-button" id="goal-button">VISION</button>
-        <br>
-        <button class="uk-button" id="goal-button">LONG TERM GOALS</button>
-        <br>
-        <button class="uk-button" id="goal-button">SHORT TERM GOALS-WEEKLY</button>
-        <br>
-        <button class="uk-button" id="goal-button">SELF-EVALUATE</button>
-        <br>
-        <button class="uk-button" id="goal-button">REFLECTION JOURNAL</button>
+
+
+    <div class="desktop-wrapper">
+        <!--Accordion-->
+        <ul uk-accordion="multiple: true">
+            <!--Accordion button-->
+            <li>
+                <a class="uk-accordion-title" href="#">&nbsp;&gt; VISION</a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.</p>
+                </div>
+            </li>
+            <!--Accordion button-->
+            <li>
+                <a class="uk-accordion-title" href="#">&nbsp;&gt; LONG TERM GOALS</a>
+                <div class="uk-accordion-content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor reprehenderit.</p>
+                </div>
+            </li>
+            <!--Accordion button-->
+            <li>
+                <a class="uk-accordion-title" href="#">&nbsp;&gt; SHORT TERM GOALS-WEEKLY</a>
+                <div class="uk-accordion-content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+            </li>
+            <!--Accordion button-->
+            <li>
+                <a class="uk-accordion-title" href="#">&nbsp;&gt; SELF-EVALUATE</a>
+                <div class="uk-accordion-content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+            </li>
+            <!--Accordion button-->
+            <li>
+                <a class="uk-accordion-title" href="#">&nbsp;&gt; REFLECTION JOURNAL</a>
+                <div class="uk-accordion-content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+            </li>
+        </ul>
     </div>
 
 

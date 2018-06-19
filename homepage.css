@@ -10,7 +10,6 @@
     }
     /* Entire switcher bar */
     ul.uk-subnav.uk-subnav-pill {
-        display: sticky;
         width: 100vw;
         max-width: 400px;
         min-width: 320px;
