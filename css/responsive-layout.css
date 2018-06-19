@@ -71,6 +71,9 @@ body {
     #bottom-nav {
         display: none;
     }
+    .desktop-wrapper {
+        margin-left: 130px;
+    }
     #english-connect-3 {
         left: calc(var(--sidebar-width) + 95px);
     }
@@ -136,6 +139,9 @@ body {
     #sidenav {
         display: none;
     }
+    .desktop-wrapper {
+        padding-bottom: 70px;
+    }
     /***************** Header Section ******************/
     #english-connect-3 {
         margin: auto;
@@ -164,6 +170,7 @@ body {
         background-color: white;
         border-top: 1px solid rgb(207, 207, 207);
         bottom: 0;
+        height: 70px;
         margin-top: 15px;
         padding-top: 7px;
         position: fixed;

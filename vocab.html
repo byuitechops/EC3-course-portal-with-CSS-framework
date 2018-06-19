@@ -5,20 +5,23 @@
     <title>EC-3 Vocabulary</title>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
-    <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
-    <link rel="stylesheet" href="homepage.css" type="text/css">
+    <link rel="stylesheet" href="./css/uikit.min.css" type="text/css">
+    <link rel="stylesheet" href="./vocab.css" type="text/css">
+    <link rel="stylesheet" href="./css/responsive-layout.css" type="text/css">
 </head>
 
 <body>
     <!--Top Navbar-->
-    <nav class="uk-navbar-container uk-margin" uk-navbar>
-        <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="">English
-                <i>Connect3</i>
+    <nav class="uk-navbar-container uk-margin" id="first-nav" uk-navbar>
+        <div class="uk-navbar-center" id="english-connect-3">
+            <a class="uk-navbar-item uk-logo" href="">
+                <span>English</span>
+                <i>Connect</i>
+                <span>3</span>
             </a>
         </div>
         <div class="uk-navbar-right">
-            <a href="" uk-icon="question">Help</a>
+            <a href="" uk-icon="icon: question; ratio:1">HELP</a>
         </div>
     </nav>
 
@@ -29,72 +32,118 @@
         <hr class="uk-divider-small">
     </div>
 
-    <!--Container to hold all levels-->
-    <div class="uk-container" id="vocab-container">
-        <!--Container to hold level 1-->
-        <div class="uk-container" id="level-container">
-            <p>LEVEL 1</p>
-            <button class="uk-button" id="practice-button">PRACTICE</button>
-            <button class="uk-button" id="test-button">TEST</button>
+    <!--Side Navbar-->
+    <div class="uk-container" id="sidenav">
+        <ul id="side-nav-box">
+            <a href="index.html">
+                <li id="side-nav-button">
+                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png">
+                    <p>Home</p>
+                </li>
+            </a>
+            <a href="goals.html">
+                <li id="side-nav-button">
+                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png">
+                    <p>Goals</p>
+                </li>
+            </a>
+            <a href="gathering.html">
+                <li id="side-nav-button">
+                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png">
+                    <p>Gathering</p>
+                </li>
+            </a>
+            <a href="feedback.html">
+                <li id="side-nav-button">
+                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png">
+                    <p>Feedback</p>
+                </li>
+            </a>
+            <a href="learningToLearn.html">
+                <li id="side-nav-button">
+                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png">
+                    <p>Learning to Learn</p>
+                </li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="desktop-wrapper">
+        <div class="button-wrapper">
+            <button class="uk-button-small" id="vocabIcon-desktop" disabled>V</button>
+            <p>Level X</p>
         </div>
-        <!--Container to hold level 2-->
-        <div class="uk-container" id="level-container">
-            <p>LEVEL 2</p>
-            <button class="uk-button" id="practice-button">PRACTICE</button>
-            <button class="uk-button" id="test-button">TEST</button>
-        </div>
-        <!--Container to hold level 3-->
-        <div class="uk-container" id="level-container">
-            <p>LEVEL 3</p>
-            <button class="uk-button" id="practice-button">PRACTICE</button>
-            <button class="uk-button" id="test-button">TEST</button>
-        </div>
-        <!--Container to hold level 4-->
-        <div class="uk-container" id="level-container">
-            <p>LEVEL 4</p>
-            <button class="uk-button" id="practice-button">PRACTICE</button>
-            <button class="uk-button" id="test-button">TEST</button>
+        <img src="./images/Speaking.jpg">
+        <p>OVERALL LEVEL X PROGRESS</p>
+        <p>¯\_(ツ)_/¯</p>
+        <hr class="uk-divider-small">
+        <!--Container to hold all levels-->
+        <div class="uk-container" id="vocab-container">
+            <!-- Level 1 Container-->
+            <div class="uk-container">
+                <p>LEVEL 1</p>
+                <button class="uk-button" id="practice-button">PRACTICE</button>
+                <button class="uk-button" id="test-button">TEST</button>
+            </div>
+            <!-- Level 2 Container-->
+            <div class="uk-container">
+                <p>LEVEL 2</p>
+                <button class="uk-button" id="practice-button">PRACTICE</button>
+                <button class="uk-button" id="test-button">TEST</button>
+            </div>
+            <!-- Level 3 Container-->
+            <div class="uk-container">
+                <p>LEVEL 3</p>
+                <button class="uk-button" id="practice-button">PRACTICE</button>
+                <button class="uk-button" id="test-button">TEST</button>
+            </div>
+            <!-- Level 4 Container-->
+            <div class="uk-container">
+                <p>LEVEL 4</p>
+                <button class="uk-button" id="practice-button">PRACTICE</button>
+                <button class="uk-button" id="test-button">TEST</button>
+            </div>
         </div>
     </div>
 
-
     <!--Bottom Navbar-->
-    <nav class="uk-navbar-container uk-position-bottom" id="bottom-nav">
-        <ul class="uk-navbar-nav">
+    <nav id="bottom-nav">
+        <ul>
             <!--Home Button Icon-->
-            <li>
-                <a href="homepage.html" id="active-button">
-                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png" width="110" height="100">
+            <li id="active-button">
+                <a href="index.html" id="active-button">
+                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png">
                 </a>
                 <p>Home</p>
             </li>
             <!--Goals Button Icon-->
             <li>
                 <a href="goals.html">
-                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png" width="120" height="100">
+                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png">
                 </a>
                 <p>Goals</p>
             </li>
             <!--Gathering Button Icon-->
             <li>
                 <a href="gathering.html">
-                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png" width="110" height="100">
+                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png">
                 </a>
                 <p>Gathering</p>
             </li>
             <!--Feedback Button Icon-->
             <li>
                 <a href="feedback.html">
-                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png" width="120" height="100">
+                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png">
                 </a>
                 <p>Feedback</p>
             </li>
             <!--Learning to Learn Button Icon-->
             <li>
                 <a href="learningToLearn.html">
-                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png" width="130" height="100">
+                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png">
                 </a>
-                <p>Learning to Learn</p>
+                <p>Learning
+                    <br/>to Learn</p>
             </li>
         </ul>
     </nav>
