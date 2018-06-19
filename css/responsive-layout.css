@@ -53,6 +53,16 @@ body {
     width: 100%;
     border-top: 3px solid gray;
 }
+/************ Accordion Used on Multiple Pages *************/
+a.uk-accordion-title::after {
+    color: white;
+}
+li.uk-open {
+    background-color: pink;
+}
+a.uk-accordion-title:active {
+    background-color: magenta;
+}
 
 @media screen and (min-width: 645px) {
     #second-nav,
@@ -81,7 +91,7 @@ body {
         padding: 0px;
         background-color: rgb(196, 191, 191);
         width: var(--sidebar-width);
-        margin-top: 115px;
+        margin-top: 5vh;
         border-top: solid white;
     }
     #side-nav-box a {
@@ -93,7 +103,7 @@ body {
         width: var(--sidebar-width);
         text-align: center;
         border-bottom: solid white;
-        height: 90px;
+        height: auto;
     }
     #side-nav-button>p {
         width: var(--sidebar-width);
