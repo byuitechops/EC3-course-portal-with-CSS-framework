@@ -54,6 +54,9 @@ body {
     border-top: 3px solid gray;
 }
 /************ Accordion Used on Multiple Pages *************/
+.uk-accordion {
+    
+}
 a.uk-accordion-title::after {
     color: white;
 }
@@ -103,12 +106,13 @@ a.uk-accordion-title:active {
         width: var(--sidebar-width);
         text-align: center;
         border-bottom: solid white;
-        height: auto;
+        height: 90px;
+        font-size: 14px;
     }
     #side-nav-button>p {
-        width: var(--sidebar-width);
-        margin: 0;
         color: #777777;
+        margin: 0;
+        width: var(--sidebar-width);
     }
     #pathway-logo {
         width: 90%;

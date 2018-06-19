@@ -7,6 +7,7 @@
     <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="./css/uikit.min.css" type="text/css">
     <link rel="stylesheet" href="learningToLearn.css" type="text/css">
+    <link rel="stylesheet" href="./css/accordion.css" type="text/css">
     <link rel="stylesheet" href="./css/responsive-layout.css" type="text/css">
 </head>
 
@@ -76,7 +77,7 @@
 
 
     <!--Container to hold all buttons-->
-    <div class="uk-container">
+    <!-- <div class="uk-container">
         <button class="uk-button" id="goal-button">COURSE OVERVIEW</button>
         <br>
         <button class="uk-button" id="goal-button">WEEKLY GATHERING</button>
@@ -87,6 +88,50 @@
         <br>
         <button class="uk-button" id="goal-button">LEARNING A LANGUAGE</button>
     </div>
+
+ -->
+
+
+    <div class="desktop-wrapper">
+        <!--Accordion-->
+        <ul uk-accordion="multiple: true">
+            <!--Accordion button-->
+            <li>
+                <a class="uk-accordion-title" href="#">&nbsp;&gt; COURSE OVERVIEW</a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.</p>
+                </div>
+            </li>
+            <!--Accordion button-->
+            <li>
+                <a class="uk-accordion-title" href="#">&nbsp;&gt; SETTING GOALS</a>
+                <div class="uk-accordion-content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor reprehenderit.</p>
+                </div>
+            </li>
+            <!--Accordion button-->
+            <li>
+                <a class="uk-accordion-title" href="#">&nbsp;&gt; AGENTIVE LEARNING</a>
+                <div class="uk-accordion-content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+            </li>
+            <!--Accordion button-->
+            <li>
+                <a class="uk-accordion-title" href="#">&nbsp;&gt; LEARNING A LANGUAGE</a>
+                <div class="uk-accordion-content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
 
 
     <!--Bottom Navbar-->
