@@ -9,11 +9,9 @@ window.onload = function() {
     var context = {
         breadCrumb: "Vocabulary",
         level: "1",
-        imgSrc: "./images/Speaking.jpg",
-        color1: "#6CABB7",  // teal
-        color2: "#BBBF39",  // green
+        imgSrc: "./images/Reading.jpg",
         icon_id: "vocabIcon-desktop",
-        icon_symbol: "V",
+        icon_symbol: "R",
      };
 
      var compiledHtml = compiled_template(context);

@@ -11,132 +11,140 @@
 </head>
 
 <body>
-    <!--Top Navbar-->
-    <nav class="uk-navbar-container uk-margin" id="first-nav" uk-navbar>
-        <div class="uk-navbar-center" id="english-connect-3">
-            <a class="uk-navbar-item uk-logo" href="">
-                <span>English</span>
-                <i>Connect</i>
-                <span>3</span>
-            </a>
-        </div>
-        <div class="uk-navbar-right">
-            <a href="" uk-icon="icon: question; ratio:1">HELP</a>
-        </div>
-    </nav>
+    <script id="template" type="text/x-handlebars-template">
+        <!--Top Navbar-->
+        <nav class="uk-navbar-container uk-margin" id="first-nav" uk-navbar>
+            <div class="uk-navbar-center" id="english-connect-3">
+                <a class="uk-navbar-item uk-logo" href="">
+                    <span>English</span>
+                    <i>Connect</i>
+                    <span>3</span>
+                </a>
+            </div>
+            <div class="uk-navbar-right">
+                <a href="" uk-icon="icon: question; ratio:1">HELP</a>
+            </div>
+        </nav>
 
-    <!--Page specific part of navbar-->
-    <div class="uk-container" id="second-nav">
-        <hr class="uk-divider-small">
-        <a class="uk-logo" href="">Reading</a>
-        <hr class="uk-divider-small">
-    </div>
-
-    <div class="desktop-wrapper">
-        <div class="button-wrapper">
-            <button class="uk-button-small" id="vocabIcon-desktop" disabled>R</button>
-            <p>Level X</p>
-        </div>
-        <img src="./images/Reading.jpg" alt="reading">
-
-        <div>
-            <button class="uk-button uk-width-1-1" id="function-button">ASK/ANSWER</button>
-            <br>
-            <button class="uk-button uk-width-1-1" id="function-button">NEGOTIATE</button>
-            <br>
-            <button class="uk-button uk-width-1-1" id="function-button">DESCRIBE</button>
-            <br>
-            <button class="uk-button uk-width-1-1" id="function-button">NARRATE</button>
-            <!--Mid-page Divider-->
+        <!--Page specific part of navbar-->
+        <div class="uk-container" id="second-nav">
             <hr class="uk-divider-small">
-            <p>OVERALL LEVEL PROGRESS</p>
-            <button class="uk-button uk-width-1-1" id="function-button">LEVEL TEST</button>
+            <a class="uk-logo" href="">{{breadCrumb}}</a>
+            <hr class="uk-divider-small">
+        </div>
+
+        <div class="desktop-wrapper">
+            <div class="button-wrapper">
+                <button class="uk-button-small" id={{icon_id}} disabled>{{icon_symbol}}</button>
+                <p>Level {{level}}</p>
+            </div>
+            <img src={{imgSrc}} alt="reading">
+
+            <div>
+                <button class="uk-button uk-width-1-1" id="function-button">ASK/ANSWER</button>
+                <br>
+                <button class="uk-button uk-width-1-1" id="function-button">NEGOTIATE</button>
+                <br>
+                <button class="uk-button uk-width-1-1" id="function-button">DESCRIBE</button>
+                <br>
+                <button class="uk-button uk-width-1-1" id="function-button">NARRATE</button>
+                <!--Mid-page Divider-->
+                <hr class="uk-divider-small">
+                <p>OVERALL LEVEL PROGRESS</p>
+                <button class="uk-button uk-width-1-1" id="function-button">LEVEL TEST</button>
+
+            </div>
 
         </div>
 
-    </div>
+
+        <!--Side Navbar-->
+        <div class="uk-container" id="sidenav">
+            <ul id="side-nav-box">
+                <a href="index.html">
+                    <li id="side-nav-button">
+                        <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png">
+                        <p>Home</p>
+                    </li>
+                </a>
+                <a href="goals.html">
+                    <li id="side-nav-button">
+                        <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png">
+                        <p>Goals</p>
+                    </li>
+                </a>
+                <a href="gathering.html">
+                    <li id="side-nav-button">
+                        <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png">
+                        <p>Gathering</p>
+                    </li>
+                </a>
+                <a href="feedback.html">
+                    <li id="side-nav-button">
+                        <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png">
+                        <p>Feedback</p>
+                    </li>
+                </a>
+                <a href="learningToLearn.html">
+                    <li id="side-nav-button">
+                        <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png">
+                        <p>Learning to Learn</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
 
 
-    <!--Side Navbar-->
-    <div class="uk-container" id="sidenav">
-        <ul id="side-nav-box">
-            <a href="index.html">
-                <li id="side-nav-button">
-                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png">
+
+
+        <!--Bottom Navbar-->
+        <nav id="bottom-nav">
+            <ul>
+                <!--Home Button Icon-->
+                <li id="active-button">
+                    <a href="index.html" id="active-button">
+                        <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png">
+                    </a>
                     <p>Home</p>
                 </li>
-            </a>
-            <a href="goals.html">
-                <li id="side-nav-button">
-                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png">
+                <!--Goals Button Icon-->
+                <li>
+                    <a href="goals.html">
+                        <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png">
+                    </a>
                     <p>Goals</p>
                 </li>
-            </a>
-            <a href="gathering.html">
-                <li id="side-nav-button">
-                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png">
+                <!--Gathering Button Icon-->
+                <li>
+                    <a href="gathering.html">
+                        <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png">
+                    </a>
                     <p>Gathering</p>
                 </li>
-            </a>
-            <a href="feedback.html">
-                <li id="side-nav-button">
-                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png">
+                <!--Feedback Button Icon-->
+                <li>
+                    <a href="feedback.html">
+                        <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png">
+                    </a>
                     <p>Feedback</p>
                 </li>
-            </a>
-            <a href="learningToLearn.html">
-                <li id="side-nav-button">
-                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png">
-                    <p>Learning to Learn</p>
+                <!--Learning to Learn Button Icon-->
+                <li>
+                    <a href="learningToLearn.html">
+                        <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png">
+                    </a>
+                    <p>Learning
+                        <br/>to Learn</p>
                 </li>
-            </a>
-        </ul>
-    </div>
+            </ul>
+        </nav>
+    </script>
 
+    <!-- Where the content will display -->
+    <div id="target"></div>
 
-
-
-    <!--Bottom Navbar-->
-    <nav id="bottom-nav">
-        <ul>
-            <!--Home Button Icon-->
-            <li id="active-button">
-                <a href="index.html" id="active-button">
-                    <img id="nav-icons" border="0" alt="home button" src="./images/Home button.png">
-                </a>
-                <p>Home</p>
-            </li>
-            <!--Goals Button Icon-->
-            <li>
-                <a href="goals.html">
-                    <img id="nav-icons" border="0" alt="goals button" src="./images/Goals button.png">
-                </a>
-                <p>Goals</p>
-            </li>
-            <!--Gathering Button Icon-->
-            <li>
-                <a href="gathering.html">
-                    <img id="nav-icons" border="0" alt="gathering button" src="./images/Gathering button.png">
-                </a>
-                <p>Gathering</p>
-            </li>
-            <!--Feedback Button Icon-->
-            <li>
-                <a href="feedback.html">
-                    <img id="nav-icons" border="0" alt="feedback button" src="./images/Feedback button.png">
-                </a>
-                <p>Feedback</p>
-            </li>
-            <!--Learning to Learn Button Icon-->
-            <li>
-                <a href="learningToLearn.html">
-                    <img id="nav-icons" border="0" alt="learning to learn button" src="./images/LearntoLearn button.png">
-                </a>
-                <p>Learning
-                    <br/>to Learn</p>
-            </li>
-        </ul>
-    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="./skillFunction.js"></script>
 </body>
 
 </html>
