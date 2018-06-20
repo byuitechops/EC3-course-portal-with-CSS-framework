@@ -2,14 +2,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EC-3 Vocabulary</title>
+    <title>EC-3 {{breadCrumb}}</title>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="./css/uikit.min.css" type="text/css">
     <link rel="stylesheet" href="./vocab.css" type="text/css">
     <link rel="stylesheet" href="./css/responsive-layout.css" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-    <script src="./vocab.js"></script>
 </head>
 
 <body>
@@ -76,7 +74,7 @@
                 <button class="uk-button-small" id={{icon_id}} disabled>{{icon_symbol}}</button>
                 <p>Level {{level}}</p>
             </div>
-            <img src={{imgSrc}}>
+            <img src={{imgSrc}} alt={{breadCrumb}}>
             <p>OVERALL LEVEL X PROGRESS</p>
             <p>¯\_(ツ)_/¯</p>
             <hr class="uk-divider-small">
@@ -154,6 +152,9 @@
         
         <!-- Where the content will display -->
         <div id="target"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+        <script src="./vocab.js"></script>
     </body>
     
     </html>

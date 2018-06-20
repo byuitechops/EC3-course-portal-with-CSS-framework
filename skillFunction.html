@@ -2,12 +2,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EC-3 Reading</title>
+    <title>EC-3 {{breadCrumb}}</title>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="./css/uikit.min.css" type="text/css">
-    <link rel="stylesheet" href="./css/responsive-layout.css" type="text/css">
     <link rel="stylesheet" href="./skillFunction.css" type="text/css">
+    <link rel="stylesheet" href="./css/responsive-layout.css" type="text/css">
 </head>
 
 <body>
@@ -32,31 +32,6 @@
             <a class="uk-logo" href="">{{breadCrumb}}</a>
             <hr class="uk-divider-small">
         </div>
-
-        <div class="desktop-wrapper">
-            <div class="button-wrapper">
-                <button class="uk-button-small" id={{icon_id}} disabled>{{icon_symbol}}</button>
-                <p>Level {{level}}</p>
-            </div>
-            <img src={{imgSrc}} alt="reading">
-
-            <div>
-                <button class="uk-button uk-width-1-1" id="function-button">ASK/ANSWER</button>
-                <br>
-                <button class="uk-button uk-width-1-1" id="function-button">NEGOTIATE</button>
-                <br>
-                <button class="uk-button uk-width-1-1" id="function-button">DESCRIBE</button>
-                <br>
-                <button class="uk-button uk-width-1-1" id="function-button">NARRATE</button>
-                <!--Mid-page Divider-->
-                <hr class="uk-divider-small">
-                <p>OVERALL LEVEL PROGRESS</p>
-                <button class="uk-button uk-width-1-1" id="function-button">LEVEL TEST</button>
-
-            </div>
-
-        </div>
-
 
         <!--Side Navbar-->
         <div class="uk-container" id="sidenav">
@@ -94,8 +69,23 @@
             </ul>
         </div>
 
-
-
+        <div class="desktop-wrapper">
+            <div class="button-wrapper">
+                <button class="uk-button-small" id={{icon_id}} disabled>{{icon_symbol}}</button>
+                <p>Level {{level}}</p>
+            </div>
+            <img src={{imgSrc}} alt={{breadCrumb}}>
+            <div>
+                <button class="uk-button uk-width-1-1" id="function-button">ASK/ANSWER</button>
+                <button class="uk-button uk-width-1-1" id="function-button">NEGOTIATE</button>
+                <button class="uk-button uk-width-1-1" id="function-button">DESCRIBE</button>
+                <button class="uk-button uk-width-1-1" id="function-button">NARRATE</button>
+                <!--Mid-page Divider-->
+                <hr class="uk-divider-small">
+                <p>OVERALL LEVEL PROGRESS</p>
+                <button class="uk-button uk-width-1-1" id="function-button">LEVEL TEST</button>
+            </div>
+        </div>
 
         <!--Bottom Navbar-->
         <nav id="bottom-nav">
